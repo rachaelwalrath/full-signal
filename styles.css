@@ -526,3 +526,26 @@ footer.site .wrap{display:block}
 .post-end p{color:var(--on-ink-muted);font-size:var(--text-sm);margin-top:var(--space-2)}
 @media(max-width:700px){.post-end{grid-template-columns:1fr}}
 .empty-note{font-size:var(--text-sm);color:var(--faint);margin-top:var(--space-8)}
+
+/* 2026-10-06: AI Assessment calculator, captions, first-engagement label */
+.check-next{grid-column:1/-1;border-top:1px solid var(--border);padding-top:var(--space-6);font-size:var(--text-sm);color:var(--muted)}
+.calc{border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--surface);padding:clamp(var(--space-6),4vw,var(--space-8));margin-bottom:var(--space-5)}
+.calc h3{font-family:var(--font-display);font-weight:700;font-size:var(--text-lg);letter-spacing:-.01em;margin-bottom:var(--space-5)}
+.calc label{display:block;font-size:var(--text-sm);color:var(--muted);margin-bottom:var(--space-2)}
+.calc-input{display:inline-flex;align-items:center;gap:var(--space-2);border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);padding:var(--space-2) var(--space-4)}
+.calc-input span{font-family:var(--font-display);font-weight:700;color:var(--muted)}
+.calc-input input{width:7ch;border:0;background:transparent;color:var(--text);font:inherit;font-family:var(--font-display);font-weight:700;font-size:var(--text-lg)}
+.calc-input input:focus{outline:none}
+.calc-input:focus-within{outline:2px solid var(--accent);outline-offset:3px}
+.calc-out{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-6);margin-top:var(--space-6)}
+.calc-out dt{font-size:var(--text-xs);color:var(--muted)}
+.calc-out dd{font-family:var(--font-display);font-weight:700;font-size:var(--text-xl);letter-spacing:-.02em;margin-top:var(--space-1)}
+.calc-table{overflow-x:auto}
+.calc-table table{width:100%;border-collapse:collapse;font-size:var(--text-sm)}
+.calc-table th,.calc-table td{text-align:left;padding:var(--space-2) var(--space-3);border-bottom:1px solid var(--border)}
+.calc-table th{font-weight:500;color:var(--muted)}
+.calc-note,.race-cap,.report-note{font-size:var(--text-xs);color:var(--faint);margin-top:var(--space-4)}
+.race-cap,.report-note{font-size:var(--text-sm);color:var(--muted)}
+.pk-first{color:var(--muted);margin-top:calc(-1 * var(--space-3))}
+.pk.feature .pk-first{color:rgba(255,255,255,.82)}
+@media(max-width:640px){.calc-out{grid-template-columns:1fr;gap:var(--space-4)}}

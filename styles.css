@@ -551,7 +551,7 @@ footer.site .wrap{display:block}
 @media(max-width:640px){.calc-out{grid-template-columns:1fr;gap:var(--space-4)}}
 
 /* ===== Blog post layout: article + right sidebar ===== */
-.article .wrap.article-grid{max-width:var(--max);display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:clamp(var(--space-10),5vw,var(--space-20));align-items:start}
+.article .wrap.article-grid{max-width:var(--max);display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(var(--space-16),9vw,8rem);align-items:start}
 .article-main{min-width:0;max-width:720px}
 .post-aside{display:grid;gap:var(--space-12);padding-top:var(--space-2)}
 .post-aside .aside-block{border-top:2px solid var(--text);padding:var(--space-5) 0 0;margin:0}

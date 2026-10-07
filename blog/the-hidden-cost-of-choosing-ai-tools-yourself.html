@@ -58,7 +58,8 @@
 </header>
 <main id="main">
   <article class="article">
-    <div class="wrap">
+    <div class="wrap article-grid">
+    <div class="article-main">
       <a class="back" href="../blog.html">← All posts</a>
       <h1>Why Choosing AI Tools Yourself Costs More Than You Think</h1>
       <div class="post-meta"><span class="cat">AI strategy</span><span>Oct 3, 2026</span><span>5 min read</span></div>
@@ -100,6 +101,8 @@
 <p><strong>Ready to skip the research?</strong> <a href="https://meetings-na2.hubspot.com/rwalrath/ai-assessment">Book an AI Assessment</a>, or <a href="https://meetings-na2.hubspot.com/rwalrath/bring-your-questions">ask a question first</a> on a free Q&amp;A call.</p>
       </div>
       <div class="post-end"><div><h2>Skip the months of research</h2><p>A 45-minute AI Assessment. Your quick wins, the tools that fit, and a 4-day plan, in a visual report within 48 hours.</p></div><a href="../advisory.html#check" class="btn btn-primary">Book an AI Assessment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+    <aside class="post-aside" data-sidebar aria-label="More from Full Signal"></aside>
     </div>
   </article>
 </main>
@@ -203,6 +206,7 @@ th.forEach(t=>t.addEventListener('click',()=>go(+t.dataset.i)));
 document.querySelectorAll('[data-step]').forEach(b=>b.addEventListener('click',()=>go(i+ +b.dataset.step)));
 document.querySelector('.viewer').addEventListener('keydown',e=>{if(e.key==='ArrowRight')go(i+1);if(e.key==='ArrowLeft')go(i-1)});})();
 </script>
+<script defer src="sidebar.js"></script>
 <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

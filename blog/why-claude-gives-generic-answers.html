@@ -58,7 +58,8 @@
 </header>
 <main id="main">
   <article class="article">
-    <div class="wrap">
+    <div class="wrap article-grid">
+    <div class="article-main">
       <a class="back" href="../blog.html">← All posts</a>
       <h1>Why Claude Gives You Generic Answers, and the Setup That Fixes It</h1>
       <div class="post-meta"><span class="cat">Claude training</span><span>Oct 1, 2026</span><span>4 min read</span></div>
@@ -93,6 +94,8 @@
 <p>Claude is a trademark of Anthropic. Full Signal is independent and not affiliated with Anthropic.</p>
       </div>
       <div class="post-end"><div><h2>See the setup built live</h2><p>Free 60-minute session · Thu, Oct 15 · 10 AM PT</p></div><a href="../events.html#webinar-event" class="btn btn-primary">Save my free seat <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+    <aside class="post-aside" data-sidebar aria-label="More from Full Signal"></aside>
     </div>
   </article>
 </main>
@@ -196,6 +199,7 @@ th.forEach(t=>t.addEventListener('click',()=>go(+t.dataset.i)));
 document.querySelectorAll('[data-step]').forEach(b=>b.addEventListener('click',()=>go(i+ +b.dataset.step)));
 document.querySelector('.viewer').addEventListener('keydown',e=>{if(e.key==='ArrowRight')go(i+1);if(e.key==='ArrowLeft')go(i-1)});})();
 </script>
+<script defer src="sidebar.js"></script>
 <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

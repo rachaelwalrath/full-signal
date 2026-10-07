@@ -58,7 +58,8 @@
 </header>
 <main id="main">
   <article class="article">
-    <div class="wrap">
+    <div class="wrap article-grid">
+    <div class="article-main">
       <a class="back" href="../blog.html">← All posts</a>
       <h1>Best AI Workflow Consulting Services for Firms</h1>
       <div class="post-meta"><span class="cat">AI strategy</span><span>Oct 6, 2026</span><span>6 min read</span></div>
@@ -153,6 +154,8 @@
 <p><strong>It is a fit if</strong> you know your firm is losing hours to repeat work, you're not sure where to start, and you'd rather spend $999 finding out than spend months automating the wrong thing.</p>
       </div>
       <div class="post-end"><div><h2>Find the 5 hours first</h2><p>Signal Check: AI Assessment · $999 · Refund if we don't find 5 hours a week</p></div><a href="https://meetings-na2.hubspot.com/rwalrath/ai-assessment" target="_blank" rel="noopener" class="btn btn-primary">Book your AI Assessment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+    <aside class="post-aside" data-sidebar aria-label="More from Full Signal"></aside>
     </div>
   </article>
 </main>
@@ -256,6 +259,7 @@ th.forEach(t=>t.addEventListener('click',()=>go(+t.dataset.i)));
 document.querySelectorAll('[data-step]').forEach(b=>b.addEventListener('click',()=>go(i+ +b.dataset.step)));
 document.querySelector('.viewer').addEventListener('keydown',e=>{if(e.key==='ArrowRight')go(i+1);if(e.key==='ArrowLeft')go(i-1)});})();
 </script>
+<script defer src="sidebar.js"></script>
 <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

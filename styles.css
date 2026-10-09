@@ -498,6 +498,16 @@ footer.site .wrap{display:block}
 .p-cover .mk i{width:5px;border-radius:3px;background:#fff;opacity:.85}
 .post-meta{font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:.08em;text-transform:uppercase;color:var(--faint);display:flex;gap:var(--space-4);flex-wrap:wrap}
 .post-meta .cat{color:var(--accent)}
+a.cat{text-decoration:none}a.cat:hover{text-decoration:underline;text-underline-offset:3px}
+.topics{display:flex;flex-wrap:wrap;gap:var(--space-2);margin-bottom:var(--space-6)}
+.topics a{display:inline-flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);font-weight:500;text-decoration:none;color:var(--muted);padding:var(--space-2) var(--space-4);border:1px solid var(--border);border-radius:999px;transition:color .2s,border-color .2s,background .2s}
+.topics a:hover{color:var(--text);border-color:var(--text)}
+.topics a[aria-current]{color:var(--accent);border-color:var(--accent);background:var(--accent-soft)}
+.topics .n{font-family:var(--font-mono);font-size:var(--text-xs);color:var(--faint)}
+.topics a[aria-current] .n{color:var(--accent)}
+.topics-status{font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:.08em;text-transform:uppercase;color:var(--faint);min-height:1.5em}
+.topics-status:empty{display:none}
+.post-card[hidden]{display:none}
 .post-card h3{font-family:var(--font-display);font-weight:700;font-size:var(--text-xl);letter-spacing:-.01em;line-height:1.15;margin-block:var(--space-3);transition:color .2s}
 .post-card p{color:var(--muted);max-width:60ch}
 .post-card .go{display:inline-flex;gap:var(--space-2);align-items:center;margin-top:var(--space-4);font-weight:600;font-size:var(--text-sm);color:var(--accent)}

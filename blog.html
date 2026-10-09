@@ -68,8 +68,17 @@
   </section>
   <section style="padding-top:clamp(var(--space-8),4vw,var(--space-12))">
     <div class="wrap">
+      <nav class="topics" aria-label="Filter posts by topic">
+        <a href="/blog" data-topic="">All posts</a>
+        <a href="/blog?topic=ai-strategy" data-topic="ai-strategy">AI strategy</a>
+        <a href="/blog?topic=claude-training" data-topic="claude-training">Claude training</a>
+        <a href="/blog?topic=choosing-help" data-topic="choosing-help">Choosing AI help</a>
+        <a href="/blog?topic=workflows" data-topic="workflows">Workflows</a>
+        <a href="/blog?topic=agencies" data-topic="agencies">Agencies</a>
+      </nav>
+      <p class="topics-status" role="status" aria-live="polite"></p>
       <div class="posts">
-        <a class="post-card reveal" href="blog/ai-consulting-for-small-agencies.html">
+        <a class="post-card reveal" href="blog/ai-consulting-for-small-agencies.html" data-topics="ai-strategy choosing-help workflows agencies">
           <div class="p-cover" aria-hidden="true"><div class="mk"><i style="height:45%"></i><i style="height:70%"></i><i style="height:100%"></i><i style="height:62%"></i><i style="height:40%"></i></div><span>AI strategy</span><strong>AI Consulting for Small Agencies: How to Choose the Right Help</strong></div>
           <div>
             <div class="post-meta"><span class="cat">AI strategy</span><span>Oct 8, 2026</span><span>8 min read</span></div>
@@ -78,7 +87,7 @@
             <span class="go">Read the post <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </div>
         </a>
-        <a class="post-card reveal" href="blog/best-ai-workflow-consulting-services-for-firms.html">
+        <a class="post-card reveal" href="blog/best-ai-workflow-consulting-services-for-firms.html" data-topics="ai-strategy choosing-help workflows">
           <div class="p-cover alt" aria-hidden="true"><div class="mk"><i style="height:45%"></i><i style="height:70%"></i><i style="height:100%"></i><i style="height:62%"></i><i style="height:40%"></i></div><span>AI strategy</span><strong>Best AI Workflow Consulting Services for Firms</strong></div>
           <div>
             <div class="post-meta"><span class="cat">AI strategy</span><span>Oct 6, 2026</span><span>6 min read</span></div>
@@ -87,7 +96,7 @@
             <span class="go">Read the post <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </div>
         </a>
-        <a class="post-card reveal" href="blog/the-hidden-cost-of-choosing-ai-tools-yourself.html">
+        <a class="post-card reveal" href="blog/the-hidden-cost-of-choosing-ai-tools-yourself.html" data-topics="ai-strategy choosing-help">
           <div class="p-cover" aria-hidden="true"><div class="mk"><i style="height:45%"></i><i style="height:70%"></i><i style="height:100%"></i><i style="height:62%"></i><i style="height:40%"></i></div><span>AI strategy</span><strong>Why Choosing AI Tools Yourself Costs More Than You Think</strong></div>
           <div>
             <div class="post-meta"><span class="cat">AI strategy</span><span>Oct 3, 2026</span><span>5 min read</span></div>
@@ -96,7 +105,7 @@
             <span class="go">Read the post <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </div>
         </a>
-        <a class="post-card reveal" href="blog/why-claude-gives-generic-answers.html">
+        <a class="post-card reveal" href="blog/why-claude-gives-generic-answers.html" data-topics="claude-training workflows">
           <div class="p-cover alt" aria-hidden="true"><div class="mk"><i style="height:45%"></i><i style="height:70%"></i><i style="height:100%"></i><i style="height:62%"></i><i style="height:40%"></i></div><span>Claude training</span><strong>Why Claude Gives You Generic Answers, and the Setup That Fixes It</strong></div>
           <div>
             <div class="post-meta"><span class="cat">Claude training</span><span>Oct 1, 2026</span><span>4 min read</span></div>
@@ -219,6 +228,24 @@ function go(k){i=(k+P.length)%P.length;img.src=img.src.replace(/p[0-9]+[.]jpg$/,
 th.forEach(t=>t.addEventListener('click',()=>go(+t.dataset.i)));
 document.querySelectorAll('[data-step]').forEach(b=>b.addEventListener('click',()=>go(i+ +b.dataset.step)));
 document.querySelector('.viewer').addEventListener('keydown',e=>{if(e.key==='ArrowRight')go(i+1);if(e.key==='ArrowLeft')go(i-1)});})();
+// topic filter: /blog?topic=<slug>
+(function(){
+  const links=[...document.querySelectorAll('.topics a')],cards=[...document.querySelectorAll('.post-card[data-topics]')],status=document.querySelector('.topics-status');
+  if(!links.length)return;
+  links.forEach(a=>{const t=a.dataset.topic;const n=t?cards.filter(c=>c.dataset.topics.split(' ').includes(t)).length:cards.length;a.insertAdjacentHTML('beforeend',' <span class="n">'+n+'</span>')});
+  function apply(){
+    const t=new URLSearchParams(location.search).get('topic')||'';
+    const known=links.some(a=>a.dataset.topic===t)?t:'';
+    let shown=0;
+    cards.forEach(c=>{const on=!known||c.dataset.topics.split(' ').includes(known);c.hidden=!on;if(on){shown++;c.classList.add('in')}});
+    links.forEach(a=>a.dataset.topic===known?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current'));
+    const label=links.find(a=>a.dataset.topic===known);
+    status.textContent=known?shown+(shown===1?' post':' posts')+' on '+label.firstChild.textContent.trim():'';
+  }
+  links.forEach(a=>a.addEventListener('click',e=>{if(e.metaKey||e.ctrlKey||e.shiftKey||e.button)return;e.preventDefault();history.pushState(null,'',a.getAttribute('href'));apply()}));
+  addEventListener('popstate',apply);
+  apply();
+})();
 </script>
 <script defer src="/_vercel/insights/script.js"></script>
 </body>

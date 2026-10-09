@@ -3,6 +3,7 @@
 // Events disappear automatically the day after `ends`.
 (function(){
   const POSTS = [
+    { slug: 'prompting-is-only-half-the-story', title: 'Prompting Is Only Half the Story: Why Claude Skills Beat Better Prompts', cat: 'Claude training', date: '2026-10-09', tags: ['claude','setup','workflows','skills'] },
     { slug: 'ai-consulting-for-small-agencies', title: 'AI Consulting for Small Agencies: How to Choose the Right Help', cat: 'AI strategy', date: '2026-10-08', tags: ['strategy','buying','workflows','consulting','agencies'] },
     { slug: 'best-ai-workflow-consulting-services-for-firms', title: 'Best AI Workflow Consulting Services for Firms', cat: 'AI strategy', date: '2026-10-06', tags: ['strategy','buying','workflows','consulting'] },
     { slug: 'the-hidden-cost-of-choosing-ai-tools-yourself', title: 'Why Choosing AI Tools Yourself Costs More Than You Think', cat: 'AI strategy', date: '2026-10-03', tags: ['strategy','buying','tools'] },

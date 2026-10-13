@@ -3,6 +3,7 @@
 // Events disappear automatically the day after `ends`.
 (function(){
   const POSTS = [
+    { slug: 'how-to-measure-if-ai-saves-time', title: 'How Do You Know If AI Actually Saved You Any Time?', cat: 'Workflows', date: '2026-10-19', tags: ['workflows','measurement','tools'] },
     { slug: 'ai-consulting-for-small-agencies', title: 'AI Consulting for Small Agencies: How to Choose the Right Help', cat: 'AI strategy', date: '2026-10-08', tags: ['strategy','buying','workflows','consulting','agencies'] },
     { slug: 'best-ai-workflow-consulting-services-for-firms', title: 'Best AI Workflow Consulting Services for Firms', cat: 'AI strategy', date: '2026-10-06', tags: ['strategy','buying','workflows','consulting'] },
     { slug: 'the-hidden-cost-of-choosing-ai-tools-yourself', title: 'Why Choosing AI Tools Yourself Costs More Than You Think', cat: 'AI strategy', date: '2026-10-03', tags: ['strategy','buying','tools'] },

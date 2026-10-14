@@ -536,6 +536,9 @@ a.cat{text-decoration:none}a.cat:hover{text-decoration:underline;text-underline-
 .post-body pre code{font-family:inherit}
 .post-body .copy-btn{position:absolute;top:var(--space-3);right:var(--space-3);font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:.06em;padding:.35rem .7rem;border-radius:999px;border:1px solid var(--border);background:var(--bg);color:var(--muted);cursor:pointer}
 .post-body .copy-btn:hover{color:var(--text);border-color:var(--text)}
+.subscribe{margin-top:var(--space-12);padding:var(--space-8);border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--surface)}
+.subscribe h2{font-size:var(--text-xl);letter-spacing:-.02em;max-width:none}
+.subscribe p{color:var(--muted);margin-top:var(--space-2);margin-bottom:var(--space-5)}
 .post-end{margin-top:var(--space-16);border-radius:var(--radius-lg);background:var(--ink-block);color:var(--on-ink);padding:clamp(var(--space-8),4vw,var(--space-12));display:grid;grid-template-columns:1fr auto;gap:var(--space-8);align-items:center}
 .post-end h2{font-size:var(--text-xl);color:var(--on-ink)}
 .post-end p{color:var(--on-ink-muted);font-size:var(--text-sm);margin-top:var(--space-2)}

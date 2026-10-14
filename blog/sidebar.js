@@ -3,6 +3,7 @@
 // Events disappear automatically the day after `ends`.
 (function(){
   const POSTS = [
+    { slug: 'claude-skills-for-small-business', title: '6 Claude Skills Small Businesses Should Turn On (Then Make Their Own)', cat: 'Claude training', date: '2026-10-14', tags: ['claude','setup','workflows','skills'] },
     { slug: 'prompting-is-only-half-the-story', title: 'Prompting Is Only Half the Story: Why Claude Skills Beat Better Prompts', cat: 'Claude training', date: '2026-10-14', tags: ['claude','setup','workflows','skills','prompts'] },
     { slug: 'claude-prompts-small-business-marketing', title: '6 Claude Prompts for Small Business Marketing', cat: 'Claude training', date: '2026-10-14', tags: ['claude','workflows','prompts','marketing'] },
     { slug: 'ai-consulting-for-small-agencies', title: 'AI Consulting for Small Agencies: How to Choose the Right Help', cat: 'AI strategy', date: '2026-10-08', tags: ['strategy','buying','workflows','consulting','agencies'] },

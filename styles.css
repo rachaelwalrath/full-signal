@@ -59,6 +59,9 @@ header.scrolled{border-color:var(--border)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
 .logo{display:flex;align-items:center;gap:var(--space-3);text-decoration:none;font-weight:700;font-size:var(--text-sm);letter-spacing:.22em;text-transform:uppercase}
 .logo svg{width:44px;height:22px}
+.logo svg{flex-shrink:0}
+.logo .wm{display:flex;flex-direction:column;line-height:1.2;white-space:nowrap}
+.logo .wm small{font-size:.62em;font-weight:600;letter-spacing:.62em;color:var(--muted)}
 .nav-links{display:flex;align-items:center;gap:var(--space-8);list-style:none}
 .nav-links a{font-size:var(--text-sm);text-decoration:none;color:var(--muted);transition:color .2s}
 .nav-links a:hover{color:var(--text)}

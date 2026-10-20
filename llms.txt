@@ -1,0 +1,37 @@
+# Full Signal Advisory
+
+> AI advisory for professionals who sell their knowledge.
+
+Full Signal Advisory helps consultants, advisors, agencies, and expert teams turn what they know into AI workflows that win clients, save time, and keep critical knowledge from walking out the door. Full Signal builds it for you, or teaches you to run it. Founded by Rachael Walrath, Founder & Principal Consultant.
+
+## Advisory
+
+Fixed-scope engagements, done for you. Most firms should start with the $999 AI Assessment.
+
+- [AI Assessment](https://www.fullsignaladvisory.com/advisory#check): $999. A 45-minute conversation, a visual report in 48 hours, and a review call. Credited toward any package or training. If we don't find at least 5 hours a week you can get back, you get a full refund.
+- [Signal Audit](https://www.fullsignaladvisory.com/advisory#audit): $5K–$10K, 2 weeks, fixed scope. For leadership teams who need to agree on where AI goes first, and what it's worth.
+- [Signal Sprint](https://www.fullsignaladvisory.com/advisory#sprint): $20K–$35K, 6 weeks, fixed scope. For firms ready to put one or two high-ROI workflows into production.
+- [Signal Brain](https://www.fullsignaladvisory.com/advisory#brain): $50K–$80K, 3 months, 20 interview sessions. For firms whose expertise is the product, and whose biggest risk is losing it.
+- [Retainer](https://www.fullsignaladvisory.com/advisory#path): Optional, monthly. New workflows, knowledge refreshes, and a quarterly AI review.
+
+## Claude training
+
+A working Claude setup in your own account, around your real work.
+
+- [Free webinar](https://www.fullsignaladvisory.com/events#webinar-event): How I Set Up Claude: A Free Preview. A free 60-minute live session on Zoom.
+- [Signal Setup Lab](https://www.fullsignaladvisory.com/events#lab-event): $797. 4 weekly live sessions, up to 20 people. For consultants, advisors, and owners who use Claude a little and want it to do real work.
+- [Signal Setup 1:1](https://www.fullsignaladvisory.com/training#training): $1.5K–$2.5K. 2 × 90-min sessions and 2 weeks of support. For founders and executives who want a private setup.
+- [Team Claude Rollout](https://www.fullsignaladvisory.com/training#training): $7.5K–$25K, 4–8 weeks, priced by team size. For firms of 10–150 people adopting Claude Team or Enterprise.
+- [Signal Tune-Up](https://www.fullsignaladvisory.com/training#tuneup): From $299/month. Individual $299 group, $499 1:1. Business $1.5K–$4K.
+
+## About
+
+- [About Rachael Walrath](https://www.fullsignaladvisory.com/about): Founder & Principal Consultant. Fifteen-plus years as a systems architect, with six Salesforce certifications including Data Architect and AI Associate.
+- [Blog](https://www.fullsignaladvisory.com/blog)
+- [Events](https://www.fullsignaladvisory.com/events)
+
+## Contact
+
+- [Contact](https://www.fullsignaladvisory.com/contact): Book a free Q&A call or an AI Assessment. Every call happens on Zoom.
+- Email: rachael.walrath@fullsignaladvisory.com
+- LinkedIn: https://www.linkedin.com/in/rachaelw/

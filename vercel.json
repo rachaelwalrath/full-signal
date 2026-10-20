@@ -2,6 +2,12 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "fullsignaladvisory.com" }],
+      "destination": "https://www.fullsignaladvisory.com/:path*",
+      "statusCode": 301
+    },
     { "source": "/webinar-claude", "destination": "https://luma.com/f5r458v5", "permanent": false },
     { "source": "/webinar-workflows", "destination": "/events", "permanent": false },
     { "source": "/vegas-expo", "destination": "/", "permanent": true }

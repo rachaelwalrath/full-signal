@@ -92,6 +92,8 @@ h2{font-size:clamp(1.6rem,1.1rem + 2vw,2.5rem);margin-bottom:28px;max-width:22ch
 @media(min-width:640px){.ask{padding:32px}}
 .ask p{font-size:1.05rem;line-height:1.55;max-width:56ch;margin-bottom:20px}
 .ask p b{font-family:var(--display);font-weight:700;font-size:1.25rem;letter-spacing:-.02em;display:block;margin-bottom:4px}
+.ask .hours{font-family:var(--display);font-weight:700;letter-spacing:-.03em;line-height:1.1;font-size:clamp(1.6rem,1.2rem + 1.8vw,2.4rem);margin:28px 0 10px;padding-top:24px;border-top:1px solid rgba(255,255,255,.35)}
+.ask .hours span{display:block}
 
 /* before and after */
 .ba .label{color:var(--s1)}
@@ -175,9 +177,9 @@ h2{font-size:clamp(1.6rem,1.1rem + 2vw,2.5rem);margin-bottom:28px;max-width:22ch
         </div>
         <div class="mock" aria-live="polite">
           <div class="mock-head">
-            <div class="mono-tile" id="mono" aria-hidden="true">YB</div>
+            <div class="mono-tile" id="mono" aria-hidden="true">HL</div>
             <div>
-              <p class="greet">Good morning, <span id="name">Your Business</span></p>
+              <p class="greet">Good morning, <span id="name">Harbor Lane Bookkeeping</span></p>
               <p class="when">Tuesday 7:42 AM · ready before you are</p>
             </div>
           </div>
@@ -188,16 +190,18 @@ h2{font-size:clamp(1.6rem,1.1rem + 2vw,2.5rem);margin-bottom:28px;max-width:22ch
           </div>
           <p class="drafts-title">Drafted overnight, waiting for you</p>
           <ol class="drafts">
-            <li><span><strong>Welcome email to Maria.</strong> Starts Monday. First-day details and paperwork list.</span><span class="pill">Review</span></li>
-            <li><span><strong>Reply to the vendor invoice question.</strong> Confirms the PO number they asked for.</span><span class="pill">Review</span></li>
-            <li><span><strong>Follow-up on Tuesday's quote.</strong> Answers the two questions from the call.</span><span class="pill">Review</span></li>
-            <li><span><strong>Reminder to the team.</strong> Open enrollment forms due Friday.</span><span class="pill">Review</span></li>
+            <li><span><strong>October invoice for the Lee account.</strong> Built from the hours you logged, payment link included.</span><span class="pill">Review</span></li>
+            <li><span><strong>Welcome email to a new client.</strong> Kickoff is Monday. Intake form and document checklist attached.</span><span class="pill">Review</span></li>
+            <li><span><strong>Follow-up on Tuesday's proposal call.</strong> Answers the two questions she asked.</span><span class="pill">Review</span></li>
+            <li><span><strong>Monthly report for the Patel account.</strong> Numbers pulled in, waiting for your two-line note.</span><span class="pill">Review</span></li>
           </ol>
           <p class="mock-foot">Example only. Mock data, not a live system.</p>
         </div>
       </div>
       <div class="ask">
         <p><b>Imagine opening your laptop to this.</b> The emails that used to eat your morning, already drafted and waiting for your yes. You read, tweak, send. Done before coffee.</p>
+        <p class="hours"><span>At least 5 hours a week back.</span> Every week.</p>
+        <p>That's what the AI Assessment is for. In 45 minutes we find where your hours go and which ones to hand off first. If we can't find at least five hours a week, you get a full refund.</p>
         <a class="btn btn-white" href="https://meetings-na2.hubspot.com/rwalrath/ai-assessment?utm_source=gmac&amp;utm_medium=referral_partner&amp;utm_campaign=568254043881" target="_blank" rel="noopener">Book your AI Assessment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
@@ -208,9 +212,10 @@ h2{font-size:clamp(1.6rem,1.1rem + 2vw,2.5rem);margin-bottom:28px;max-width:22ch
       <p class="label">Before and after</p>
       <h2>Your week, before and after</h2>
       <div class="ba-head" aria-hidden="true"><span class="now">Right now</span><span class="after">After</span></div>
+      <div class="ba-row"><div class="cell now"><span class="tag">Right now</span>Invoices go out late because building them takes too long, so you get paid late.</div><div class="cell after"><span class="tag">After</span>Invoices go out the day the work is done, with reminders on day 7 and day 14, so you get paid on time.</div></div>
       <div class="ba-row"><div class="cell now"><span class="tag">Right now</span>You answer the same five questions by email every week.</div><div class="cell after"><span class="tag">After</span>Answers are drafted for you to approve.</div></div>
       <div class="ba-row"><div class="cell now"><span class="tag">Right now</span>Quotes and follow-ups wait until you find an evening.</div><div class="cell after"><span class="tag">After</span>Follow-ups go out the day of the call.</div></div>
-      <div class="ba-row"><div class="cell now"><span class="tag">Right now</span>Onboarding a new hire means rebuilding the same checklist.</div><div class="cell after"><span class="tag">After</span>The welcome email and paperwork list are ready when you are.</div></div>
+      <div class="ba-row"><div class="cell now"><span class="tag">Right now</span>Onboarding a new client means rebuilding the same welcome email and checklist.</div><div class="cell after"><span class="tag">After</span>The welcome email and intake checklist are ready when you are.</div></div>
       <div class="ba-row"><div class="cell now"><span class="tag">Right now</span>You find out what slipped when a client mentions it.</div><div class="cell after"><span class="tag">After</span>A morning brief tells you what needs you today.</div></div>
     </div>
   </section>

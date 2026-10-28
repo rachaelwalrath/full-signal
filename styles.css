@@ -599,3 +599,4 @@ a.cat{text-decoration:none}a.cat:hover{text-decoration:underline;text-underline-
   .article-main{max-width:none}
   .post-aside{margin-top:var(--space-16)}
 }
+.pk-more{font-size:var(--text-sm);font-weight:600;text-decoration:underline;text-underline-offset:3px;margin-bottom:var(--space-3)}

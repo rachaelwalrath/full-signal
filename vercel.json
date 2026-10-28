@@ -10,7 +10,8 @@
     },
     { "source": "/webinar-claude", "destination": "https://luma.com/f5r458v5", "permanent": false },
     { "source": "/webinar-workflows", "destination": "/events", "permanent": false },
-    { "source": "/vegas-expo", "destination": "/", "permanent": true }
+    { "source": "/vegas-expo", "destination": "/", "permanent": true },
+    { "source": "/vegas", "destination": "/gmac", "permanent": false }
   ],
   "rewrites": [
     { "source": "/gmac", "destination": "/gmac.html" }

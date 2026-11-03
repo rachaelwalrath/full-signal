@@ -18,6 +18,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="/roi-calculator.css" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -181,25 +182,14 @@
       </div>
     </div>
   </section>
-  <div class="stats">
-    <div class="wrap stats-grid">
-      <div class="stat reveal">
-        <b>88%</b>
-        <p>of organizations now use AI in at least one business function.</p>
-        <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2025" target="_blank" rel="noopener">McKinsey, State of AI 2025</a>
-      </div>
-      <div class="stat reveal">
-        <b>Few</b>
-        <p>have scaled it far enough to see real financial impact across the business.</p>
-        <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2025" target="_blank" rel="noopener">McKinsey, State of AI 2025</a>
-      </div>
-      <div class="stat reveal">
-        <b>#1</b>
-        <p>Search and knowledge management is the area of generative AI leaders expect to matter most.</p>
-        <a href="https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-ai-in-the-enterprise.html" target="_blank" rel="noopener">Deloitte, State of AI in the Enterprise 2026</a>
-      </div>
+  <section id="roi" class="roi-sec">
+    <div class="wrap">
+      <p class="eyebrow">Your numbers</p>
+      <h2>What your repeat work is worth</h2>
+      <div class="roi-calc roi-themed" style="margin-top:var(--space-10)" data-book="https://meetings-na2.hubspot.com/rwalrath/ai-assessment" data-qa="https://meetings-na2.hubspot.com/rwalrath/bring-your-questions" data-btn-class="btn btn-primary"></div>
+      <noscript><p><a href="https://meetings-na2.hubspot.com/rwalrath/ai-assessment">Book your AI Assessment</a> or <a href="https://meetings-na2.hubspot.com/rwalrath/bring-your-questions">bring your questions to a free Q&amp;A call</a>.</p></noscript>
     </div>
-  </div>
+  </section>
   <section id="ways">
     <div class="wrap">
       <p class="eyebrow">How we work with you</p>
@@ -415,5 +405,6 @@ document.querySelectorAll('[data-step]').forEach(b=>b.addEventListener('click',(
 document.querySelector('.viewer').addEventListener('keydown',e=>{if(e.key==='ArrowRight')go(i+1);if(e.key==='ArrowLeft')go(i-1)});})();
 </script>
 <script defer src="/_vercel/insights/script.js"></script>
+<script src="/roi-calculator.js" defer></script>
 </body>
 </html>

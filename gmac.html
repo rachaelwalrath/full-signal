@@ -147,6 +147,7 @@ h2{font-size:clamp(1.6rem,1.1rem + 2vw,2.5rem);margin-bottom:28px;max-width:22ch
 .qa p b{font-family:var(--display);font-weight:700;font-size:1.3rem;letter-spacing:-.02em;display:block;margin-bottom:4px}
 .from{margin-top:40px;font-size:.8rem;color:var(--gray)}
 </style>
+<link rel="stylesheet" href="/roi-calculator.css" />
 </head>
 <body>
 <header class="top">
@@ -210,6 +211,15 @@ h2{font-size:clamp(1.6rem,1.1rem + 2vw,2.5rem);margin-bottom:28px;max-width:22ch
         <p>That's what the AI Assessment is for. In 45 minutes we find where your hours go and which ones to hand off first. If we can't find at least five hours a week, you get a full refund.</p>
         <a class="btn btn-white" href="https://meetings-na2.hubspot.com/rwalrath/ai-assessment?utm_source=gmac&amp;utm_medium=referral_partner&amp;utm_campaign=568254043881" target="_blank" rel="noopener">Book your AI Assessment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
+    </div>
+  </section>
+
+  <section class="roi-sec" style="padding-top:0">
+    <div class="wrap">
+      <p class="label" style="color:var(--s1)">Your numbers</p>
+      <h2>What your repeat work is worth</h2>
+      <div class="roi-calc" data-book="https://meetings-na2.hubspot.com/rwalrath/ai-assessment?utm_source=gmac&amp;utm_medium=referral_partner&amp;utm_campaign=568254043881" data-qa="https://meetings-na2.hubspot.com/rwalrath/bring-your-questions?utm_source=gmac&amp;utm_medium=referral_partner&amp;utm_campaign=568254043881" data-btn-class="btn btn-ink"></div>
+      <noscript><p><a href="https://meetings-na2.hubspot.com/rwalrath/ai-assessment?utm_source=gmac&amp;utm_medium=referral_partner&amp;utm_campaign=568254043881">Book your AI Assessment</a> or <a href="https://meetings-na2.hubspot.com/rwalrath/bring-your-questions?utm_source=gmac&amp;utm_medium=referral_partner&amp;utm_campaign=568254043881">bring your questions to a free Q&amp;A call</a>.</p></noscript>
     </div>
   </section>
 
@@ -295,5 +305,6 @@ h2{font-size:clamp(1.6rem,1.1rem + 2vw,2.5rem);margin-bottom:28px;max-width:22ch
 })();
 </script>
 <script defer src="/_vercel/insights/script.js"></script>
+<script src="/roi-calculator.js" defer></script>
 </body>
 </html>

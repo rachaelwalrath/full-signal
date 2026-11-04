@@ -15,6 +15,14 @@ Fixed-scope engagements, done for you. Most firms should start with the $999 AI 
 - [Retainer](https://www.fullsignaladvisory.com/advisory#path): Optional, monthly. New workflows, knowledge refreshes, and a quarterly AI review.
 - [Team Claude Rollout](https://www.fullsignaladvisory.com/ai-rollout): $7.5K–$25K, 4–8 weeks, priced by team size. For firms of 10–150 people adopting Claude Team or Enterprise.
 
+## Salesforce setup
+
+For small teams already on Salesforce with no full-time admin. Fixed price, live in 4 weeks, with 15 days of support and Iris, your Salesforce admin (a Claude skill built from the client's own setup), handed over at launch. Not included: integrations with other systems, Salesforce licenses, a Claude plan.
+
+- [Sales Cloud Starter](https://www.fullsignaladvisory.com/salesforce#sales): $7,500. Discovery, lead and opportunity setup, pipeline stages, a basic data import, core reports and dashboards.
+- [Service Cloud Starter](https://www.fullsignaladvisory.com/salesforce#service): $7,500. Discovery, case management, email-to-case, queues, a basic knowledge base, service dashboards.
+- [Agentforce projects](https://www.fullsignaladvisory.com/salesforce): scoped and quoted after a starter build.
+
 ## About
 
 - [About Rachael Walrath](https://www.fullsignaladvisory.com/about): Founder & Principal Consultant. Fifteen-plus years as a systems architect, with six Salesforce certifications including Data Architect and AI Associate.

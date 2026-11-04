@@ -277,6 +277,7 @@ header.open .mobile-nav{display:block}
 
 /* two ways */
 .ways{display:grid;grid-template-columns:1.25fr 1fr;gap:var(--space-5);margin-top:clamp(var(--space-12),6vw,var(--space-20))}
+.ways.ways-1{grid-template-columns:1fr}
 .way{border-radius:var(--radius-lg);padding:clamp(var(--space-8),4vw,var(--space-12));display:flex;flex-direction:column;gap:var(--space-5);text-decoration:none;transition:transform .3s var(--ease)}
 .way:hover{transform:translateY(-3px)}
 .way.build{background:var(--ink-block);color:var(--on-ink)}
@@ -392,7 +393,8 @@ img.av{border-radius:50%;object-fit:cover}
 .door .pk-price{font-size:var(--text-lg)}
 .door p{font-size:var(--text-sm);color:var(--muted);flex:1}
 .door .btn{justify-content:center}
-@media(max-width:960px){.doors{grid-template-columns:1fr}}
+.doors.doors-2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:960px){.doors,.doors.doors-2{grid-template-columns:1fr}}
 
 /* footer */
 .f-contact{margin-top:var(--space-4);font-size:var(--text-sm)}.f-contact a{color:inherit;text-decoration:underline;text-underline-offset:3px}

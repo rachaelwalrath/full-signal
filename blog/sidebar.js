@@ -13,8 +13,7 @@
     { slug: 'why-claude-gives-generic-answers', title: 'Why Claude Gives You Generic Answers, and the Setup That Fixes It', cat: 'Claude training', date: '2026-10-01', tags: ['claude','setup','workflows'] }
   ];
   const EVENTS = [
-    { title: 'How I Set Up Claude: A Free Preview', when: 'Thu, Oct 15 · 10–11 AM PT', ends: '2026-10-15', label: 'Free · Live on Zoom', img: '/cover-webinar.png', href: '/events#webinar-event', cta: 'Save my free seat', ctaHref: 'https://luma.com/f5r458v5' },
-    { title: 'Signal Setup Lab', when: 'Starts Thu, Oct 22 · 4 weeks', ends: '2026-10-22', label: 'Cohort 1 · $397 founding price', img: '/cover-lab.png', href: '/events#lab-event', cta: 'Join Cohort 1', ctaHref: 'https://luma.com/4a5a1kgq' }
+    { title: 'Bring One Task You Redo Every Week', when: 'Fri, Nov 13 · 11 AM–12 PM PT', ends: '2026-11-13', label: 'Free · Live on Zoom', img: '/cover-webinar-nov13.png', href: '/webinar', cta: 'Save my free seat', ctaHref: 'https://luma.com/ozir7ugt' }
   ];
 
   const aside = document.querySelector('[data-sidebar]');
@@ -46,7 +45,7 @@
   if (upcoming.length) {
     html += '<section class="aside-block"><h2 class="aside-title">Upcoming events</h2><ul class="aside-events">' +
       upcoming.map(e => `<li><a class="aside-ev" href="${e.href}"><img src="${e.img}" alt="" width="72" height="72" loading="lazy" /><span class="aside-txt"><span class="aside-meta">${esc(e.when)}</span><span class="aside-h">${esc(e.title)}</span><span class="aside-sub">${esc(e.label)}</span></span></a><a class="aside-cta" href="${e.ctaHref}" target="_blank" rel="noopener">${esc(e.cta)} ${arrow}</a></li>`).join('') +
-      `</ul><a class="aside-more" href="/events">All events ${arrow}</a></section>`;
+      '</ul></section>';
   }
   aside.innerHTML = html;
   if (!html) aside.hidden = true;

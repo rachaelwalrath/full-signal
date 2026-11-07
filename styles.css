@@ -602,3 +602,12 @@ a.cat{text-decoration:none}a.cat:hover{text-decoration:underline;text-underline-
   .post-aside{margin-top:var(--space-16)}
 }
 .pk-more{font-size:var(--text-sm);font-weight:600;text-decoration:underline;text-underline-offset:3px;margin-bottom:var(--space-3)}
+
+/* free webinar callout (homepage, CCB-8); hidden by webinar-banner.js after Nov 13 */
+.wcall{padding-block:0}
+.wcall-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--space-8);padding-block:var(--space-8);padding-inline:clamp(var(--space-6),4vw,var(--space-10));border-radius:var(--radius-lg);background:color-mix(in srgb,#a21f8b 7%,var(--bg))}
+.wcall h2{font-size:var(--text-xl);max-width:none}
+.wcall p:not(.eyebrow){color:var(--muted);max-width:60ch;margin-top:var(--space-3)}
+.wcall .eyebrow{margin-bottom:var(--space-3)}
+.wcall .btn{flex:none}
+@media(max-width:760px){.wcall-inner{flex-direction:column;align-items:flex-start}}

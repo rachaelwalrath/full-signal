@@ -1,11 +1,11 @@
-// Site-wide banner for the free webinar on Fri 13 Nov 2026 (CCB-8).
+// Site-wide banner for the free webinar on Thu 3 Dec 2026 (moved from Fri 13 Nov).
 // Loaded with a plain <script> right after <body> on every page, so the banner
 // is in place before the header paints (no layout jump).
 // It hides itself once the session ends, and hides anything marked
 // data-webinar (the homepage callout) at the same moment.
 // After the event: delete this file and its <script> tags, or point it at the next one.
 (function(){
-  var ENDS = Date.parse('2026-11-13T20:00:00Z'); // 12:00 PM PT, end of the live hour
+  var ENDS = Date.parse('2026-12-03T20:00:00Z'); // 12:00 PM PT, end of the live hour
   var live = Date.now() < ENDS;
 
   function hideMarked(){
@@ -38,7 +38,7 @@
   bar.setAttribute('role', 'region');
   bar.setAttribute('aria-label', 'Upcoming free webinar');
   bar.innerHTML = '<div class="wrap">' +
-    '<span class="wb-tag">Free webinar · Fri, Nov 13 · 11 AM PT</span>' +
+    '<span class="wb-tag">Free webinar · Thu, Dec 3 · 11 AM PT</span>' +
     '<span>Bring one task you redo every week and watch it handed to Claude, live. <a class="wb-link" href="/webinar">Save your free seat</a></span>' +
     '<button class="wb-x" type="button" aria-label="Hide this banner">×</button>' +
     '</div>';

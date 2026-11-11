@@ -13,7 +13,7 @@
     { slug: 'why-claude-gives-generic-answers', title: 'Why Claude Gives You Generic Answers, and the Setup That Fixes It', cat: 'Claude training', date: '2026-10-01', tags: ['claude','setup','workflows'] }
   ];
   const EVENTS = [
-    { title: 'Bring One Task You Redo Every Week', when: 'Fri, Nov 13 · 11 AM–12 PM PT', ends: '2026-11-13', label: 'Free · Live on Zoom', img: '/cover-webinar-nov13.png', href: '/webinar', cta: 'Save my free seat', ctaHref: 'https://luma.com/ozir7ugt' }
+    { title: 'Bring One Task You Redo Every Week', when: 'Thu, Dec 3 · 11 AM–12 PM PT', ends: '2026-12-03', label: 'Free · Live on Zoom', img: '/cover-webinar-dec3.png', href: '/webinar', cta: 'Save my free seat', ctaHref: 'https://luma.com/ozir7ugt' }
   ];
 
   const aside = document.querySelector('[data-sidebar]');

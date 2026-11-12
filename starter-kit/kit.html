@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Your AI Employee Starter Kit | Full Signal Advisory</title>
+<meta name="description" content="The AI Employee Starter Kit: six blanks to build one Claude agent that does one job in your business." />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="canonical" href="https://www.fullsignaladvisory.com/starter-kit/kit" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%23ca1f56'/%3E%3Cstop offset='.5' stop-color='%23a21f8b'/%3E%3Cstop offset='1' stop-color='%236721b9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg stroke='url(%23g)' stroke-width='4' stroke-linecap='round'%3E%3Cpath d='M5 15v11M11 10v16M16 6v20M21 12v14M27 16v10'/%3E%3C/g%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://api.fontshare.com" />
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/styles.css" />
+<style>
+.kit-hero{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(var(--space-8),5vw,var(--space-16));align-items:start}
+.kit-form{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:clamp(var(--space-6),3vw,var(--space-8))}
+.form-wrap{background:#fff;border-radius:var(--radius);padding:var(--space-5);min-height:200px;color:#15151b}
+.form-ph{border:1.5px dashed var(--accent);border-radius:var(--radius);padding:var(--space-5);color:#5d5d68;font-size:var(--text-sm);line-height:1.5}
+.form-ph b{color:var(--accent);font-family:var(--font-mono);font-weight:500;letter-spacing:.04em}
+.form-note{margin-top:var(--space-4);font-size:var(--text-xs);color:var(--muted);line-height:1.5}
+.kit-h2,.worked h2,.next h2{font-size:var(--text-xl);max-width:26ch}
+.kit-steps{margin-top:var(--space-10);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-6);counter-reset:k}
+.kit-steps li{list-style:none;counter-increment:k;padding:var(--space-6);border-radius:var(--radius-lg);background:var(--surface)}
+.kit-steps li::before{content:"0" counter(k);display:block;font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:.14em;color:var(--accent);margin-bottom:var(--space-2)}
+.kit-steps b{display:block;font-family:var(--font-display);font-size:var(--text-lg);font-weight:600}
+.kit-steps span{display:block;color:var(--muted);font-size:var(--text-sm);margin-top:var(--space-2)}
+.fit-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:var(--space-16);align-items:start}
+.fit-grid h2{font-size:var(--text-xl);max-width:22ch}
+.fit-grid p{color:var(--muted);max-width:54ch;margin-top:var(--space-4)}
+.host{display:flex;gap:var(--space-6);align-items:center;padding:var(--space-8);border-radius:var(--radius-lg);background:color-mix(in srgb,#a21f8b 7%,var(--bg))}
+.host img{width:132px;height:132px;flex:none;border-radius:50%;object-fit:cover;object-position:50% 22%;border:4px solid #fff;box-shadow:0 0 0 10px color-mix(in srgb,#a21f8b 14%,transparent)}
+.host h3{font-family:var(--font-display);font-size:var(--text-lg);font-weight:600}
+.host .role{font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-top:var(--space-1)}
+.host p{font-size:var(--text-sm);color:var(--muted);margin-top:var(--space-3)}
+.kit-body{max-width:860px}
+.kit-how{padding:var(--space-6);border-radius:var(--radius-lg);background:var(--surface)}
+.kit-how p + p{margin-top:var(--space-3)}
+.kit-how p:not(.eyebrow){color:var(--muted)}
+.blanks{margin-top:var(--space-12);display:grid;gap:var(--space-12)}
+.blanks li{list-style:none}
+.blanks h2{font-size:var(--text-xl);display:flex;align-items:center;gap:var(--space-3)}
+.blanks h2 span{display:inline-grid;place-items:center;width:1.6em;height:1.6em;border-radius:999px;background:var(--grad);color:#fff;font-size:.7em}
+.blanks .why{color:var(--muted);margin-top:var(--space-2);max-width:62ch}
+.tpl{margin-top:var(--space-4);padding:var(--space-5);border:1.5px dashed var(--border);border-radius:var(--radius);background:var(--surface);font-family:var(--font-mono);font-size:var(--text-sm);line-height:1.7;white-space:pre-wrap;overflow-wrap:anywhere}
+.worked{margin-top:var(--space-16);padding-top:var(--space-12);border-top:1px solid var(--border)}
+.worked > p:not(.eyebrow){color:var(--muted);margin-top:var(--space-4);max-width:62ch}
+.excerpt{margin-top:var(--space-6);padding:var(--space-6);border-left:4px solid #a21f8b;border-radius:0 var(--radius) var(--radius) 0;background:color-mix(in srgb,#a21f8b 6%,var(--bg))}
+.excerpt p{font-size:var(--text-sm)}
+.excerpt p + p{margin-top:var(--space-2)}
+.excerpt .ex-label{font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-top:var(--space-5)}
+.excerpt .ex-label:first-child{margin-top:0}
+.next{margin-top:var(--space-16);padding:clamp(var(--space-8),4vw,var(--space-12));border-radius:var(--radius-lg);border:1px solid var(--border)}
+.next p:not(.eyebrow){color:var(--muted);margin-top:var(--space-4);max-width:60ch}
+.next .btn{margin-top:var(--space-6)}
+button.btn-ghost{background:transparent;color:var(--text);border:1.5px solid var(--border);cursor:pointer}
+.copied{margin-top:var(--space-3);font-size:var(--text-sm);color:var(--accent);min-height:1.5em}
+@media(max-width:900px){.kit-hero,.fit-grid{grid-template-columns:1fr;gap:var(--space-10)}.kit-steps{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.kit-steps{grid-template-columns:1fr}.host{flex-direction:column;align-items:flex-start}}
+@media print{header,footer.site,.no-print,.next .btn,.bars,.skip,.wb{display:none!important}
+  body{background:#fff;color:#000}.page-hero{padding:0 0 12pt}.tpl{border-color:#999;background:#fff;break-inside:avoid}.blanks li{break-inside:avoid}
+  .kit-how,.excerpt{background:#fff;border-color:#999}}
+</style>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/247391286.js"></script>
+<!-- End of HubSpot Embed Code -->
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header id="top">
+  <div class="wrap nav">
+    <a href="/" class="logo" aria-label="Full Signal Advisory home">
+      <svg viewBox="0 0 44 22" fill="none" aria-hidden="true">
+        <defs><linearGradient id="fsga" x1="0" x2="1"><stop offset="0" stop-color="#ca1f56"/><stop offset=".5" stop-color="#a21f8b"/><stop offset="1" stop-color="#6721b9"/></linearGradient></defs>
+        <g stroke="url(#fsga)" stroke-width="4.2" stroke-linecap="round"><path d="M4 10v9M13 6v13M22 3v16M31 8v11M40 11v8"/></g>
+      </svg>
+      <span class="wm">Full Signal <small>Advisory</small></span>
+    </a>
+    <nav aria-label="Primary"><ul class="nav-links">
+      <li><a href="/advisory">Advisory</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul></nav>
+    <div class="nav-right">
+      <button class="theme-toggle" aria-label="Toggle dark mode" data-toggle>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a href="/advisory#check" class="btn btn-primary">Book an AI Assessment</a>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mnav" data-menu>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mnav" aria-label="Mobile"><div class="wrap"><ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/advisory">Advisory</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul><a href="/advisory#check" class="btn btn-primary">Book an AI Assessment</a></div></nav>
+</header>
+<main id="main">
+  <section class="page-hero kit-top">
+    <div class="wrap kit-body">
+      <p class="eyebrow">AI Employee Starter Kit</p>
+      <h1>It's yours. <em>Pick one job and start.</em></h1>
+      <p class="lede">Bookmark this page or print it; it stays here when you come back. Set aside about 15 minutes and have one task in mind that you do every week.</p>
+      <div class="hero-cta no-print"><button type="button" class="btn btn-primary" data-copy>Copy the blank template</button><button type="button" class="btn btn-ghost" onclick="print()">Print this page</button></div>
+      <p class="copied" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap kit-body">
+      <div class="kit-how">
+        <p class="eyebrow">Before you start</p>
+        <p>Choose one job. Not "my marketing," but "the Monday client update." If you can't say what done looks like in a sentence, the job is too big; split it.</p>
+        <p>When you've filled in the blanks, paste the whole thing into the instructions of a Claude Project (or save it as a Skill if you use those). Then run the check in blank 6.</p>
+      </div>
+
+      <ol class="blanks">
+        <li>
+          <h2><span>1</span> The job</h2>
+          <p class="why">One sentence. Claude does its best work when it knows exactly what it's for and what finished looks like.</p>
+          <pre class="tpl">You are my [ROLE, e.g. client update writer].
+You [WHAT IT DOES, e.g. turn my notes from the week into the Monday update for each client].
+Done means [WHAT FINISHED LOOKS LIKE, e.g. a draft email I can send after a two-minute read].</pre>
+        </li>
+        <li>
+          <h2><span>2</span> What it reads first</h2>
+          <p class="why">Claude can't see your files or your head. List what it needs before it starts, and upload those to the Project.</p>
+          <pre class="tpl">Before you start, read:
+- [DOCUMENT OR FACT, e.g. the client list with what each one bought]
+- [SAMPLES, e.g. three past updates I was happy with]
+- [WHAT I'LL PASTE IN EACH TIME, e.g. this week's notes]</pre>
+        </li>
+        <li>
+          <h2><span>3</span> How it does the work</h2>
+          <p class="why">Write the steps the way you'd explain them to a new hire on their first day. Your rules go here, including the ones you've never said out loud.</p>
+          <pre class="tpl">Do it in this order:
+1. [FIRST STEP]
+2. [SECOND STEP]
+3. [THIRD STEP]
+
+My rules:
+- [RULE, e.g. lead with what changed for the client, not what we did]
+- [RULE, e.g. under 200 words, no jargon]
+- [RULE, e.g. sign off with my name only]</pre>
+        </li>
+        <li>
+          <h2><span>4</span> One example</h2>
+          <p class="why">One finished piece you liked teaches more than a paragraph of description.</p>
+          <pre class="tpl">Here is one I was happy with. Match its length, tone and structure:
+[PASTE A PAST EXAMPLE]</pre>
+        </li>
+        <li>
+          <h2><span>5</span> Guardrails</h2>
+          <p class="why">What it never does, and when it stops and asks you. This is what lets you trust it with the job.</p>
+          <pre class="tpl">Never:
+- [e.g. invent a number, a date or a result]
+- [e.g. promise a client anything about price or timing]
+
+Stop and ask me when:
+- [e.g. the notes don't say what changed]
+- [e.g. something in the notes looks like a problem the client should hear from me]</pre>
+        </li>
+        <li>
+          <h2><span>6</span> The check</h2>
+          <p class="why">Decide how you'll judge it before you run it. Then run it three times on real inputs before you rely on it.</p>
+          <pre class="tpl">When you finish, check your work:
+- [CHECK, e.g. every client in the notes has an update]
+- [CHECK, e.g. no number appears that isn't in my notes]
+Tell me what you couldn't do and why, separately from what you did.
+
+My test: run it on [THREE REAL INPUTS]. It passes when [e.g. I'd send all three with light edits].</pre>
+        </li>
+      </ol>
+
+      <div class="worked">
+        <p class="eyebrow">Worked example</p>
+        <h2>A trimmed section of one of Rachael's own agents</h2>
+        <p>Full Signal's newsletter is published by an agent built from these same six blanks. Below is a short, real section of its instructions, cut down and with internal names removed. Yours will be shorter. The shape is the point.</p>
+        <div class="excerpt">
+          <p class="ex-label">1 · The job</p>
+          <p>You publish the Full Signal newsletter and the LinkedIn posts that point at it.</p>
+          <p class="ex-label">2 · What it reads first</p>
+          <p>Read the run-book first, every run. Then the brand rules before anything visual, the voice rules before any copy, and the LinkedIn rules before any post.</p>
+          <p class="ex-label">3 · How it does the work</p>
+          <p>Every LinkedIn edition carries one reason to subscribe, as a link. No attachments, ever. Titles and subject lines never use a colon to split a label from the point; write the title as one plain line.</p>
+          <p class="ex-label">5 · Guardrails</p>
+          <p>Halt on any LinkedIn warning, login wall, or checkpoint. Change nothing and report what you saw.</p>
+          <p>Never put a link in a LinkedIn post body. Never use a URL from memory; every link comes from the links page.</p>
+          <p class="ex-label">6 · The check</p>
+          <p>Write one report every working day: tasks done, outcomes, what needs a decision, what was blocked. Read it back. "Could not run" and "nothing to do" are never the same report.</p>
+        </div>
+      </div>
+
+      <div class="next">
+        <p class="eyebrow">Built one?</p>
+        <h2>Build the rest with Rachael, live.</h2>
+        <p>The AI Workshop for Small and Medium Businesses is a 4-part training series for owners and operators to teach them how to use Claude to run their business. You set up a Project that knows your business, three skills for the tasks you keep re-typing, and a daily brief, on your own work.</p>
+        <a href="/lab" class="btn btn-primary">See the AI Workshop <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="/" class="logo" aria-label="Full Signal Advisory home"><svg viewBox="0 0 44 22" fill="none" aria-hidden="true">
+        <defs><linearGradient id="fsgf" x1="0" x2="1"><stop offset="0" stop-color="#ca1f56"/><stop offset=".5" stop-color="#a21f8b"/><stop offset="1" stop-color="#6721b9"/></linearGradient></defs>
+        <g stroke="url(#fsgf)" stroke-width="4.2" stroke-linecap="round"><path d="M4 10v9M13 6v13M22 3v16M31 8v11M40 11v8"/></g>
+      </svg> Full Signal Advisory</a>
+        <p>AI advisory for professionals who sell their knowledge. See clearly. Move faster.</p>
+        <p class="f-contact"><a href="mailto:rachael.walrath@fullsignaladvisory.com">rachael.walrath@fullsignaladvisory.com</a><br><a href="https://www.linkedin.com/in/rachaelw/" target="_blank" rel="noopener">LinkedIn</a></p>
+      </div>
+      <div><h2>Advisory</h2><ul>
+        <li><a href="/advisory#check">AI Assessment</a></li>
+        <li><a href="/advisory#audit">Signal Audit</a></li>
+        <li><a href="/advisory#sprint">Signal Sprint</a></li>
+        <li><a href="/advisory#brain">Signal Brain</a></li>
+        <li><a href="/salesforce">Salesforce setup</a></li></ul></div>
+      <div><h2>Company</h2><ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="https://meetings-na2.hubspot.com/rwalrath/bring-your-questions" target="_blank" rel="noopener">Free Q&amp;A call</a></li></ul></div>
+    </div>
+    <div class="f-base">
+      <span>© 2026 Full Signal Advisory. Claude is a trademark of Anthropic; Full Signal is not affiliated with Anthropic.</span>
+      <span>SEE CLEARLY. MOVE FASTER.</span>
+    </div>
+  </div>
+</footer>
+<script>
+// theme
+(function(){
+  const root=document.documentElement;
+  let theme=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+  root.setAttribute('data-theme',theme);
+  const btn=document.querySelector('[data-toggle]');
+  const moon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>';
+  const sun='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+  const set=()=>{btn.innerHTML=theme==='dark'?sun:moon;btn.setAttribute('aria-label','Switch to '+(theme==='dark'?'light':'dark')+' mode')};
+  set();
+  btn.addEventListener('click',()=>{theme=theme==='dark'?'light':'dark';root.setAttribute('data-theme',theme);set()});
+})();
+// header border
+const hdr=document.querySelector('header');
+const mb=document.querySelector('[data-menu]');
+mb.addEventListener('click',()=>{const o=hdr.classList.toggle('open');mb.setAttribute('aria-expanded',o);mb.setAttribute('aria-label',o?'Close menu':'Open menu')});
+addEventListener('keydown',e=>{if(e.key==='Escape'&&hdr.classList.contains('open')){hdr.classList.remove('open');mb.setAttribute('aria-expanded','false');mb.focus()}});
+addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>8),{passive:true});
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<script>
+(function(){
+  var b=document.querySelector('[data-copy]'),out=document.querySelector('.copied');if(!b)return;
+  b.addEventListener('click',function(){
+    var t=[].map.call(document.querySelectorAll('.blanks li'),function(li){return li.querySelector('h2').textContent.replace(/^s*(d)s*/,'$1. ').toUpperCase()+'
+'+li.querySelector('.tpl').textContent}).join('
+
+');
+    (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){out.textContent='Copied. Paste it into a document and fill in the brackets.'},function(){out.textContent='Copy did not work in this browser. Select the grey boxes below instead.'});
+  });
+})();
+</script>
+</body>
+</html>

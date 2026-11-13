@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Salesforce setup for small teams | Full Signal Advisory</title>
-<meta name="description" content="Sales Cloud and Service Cloud starter builds for small teams with no Salesforce admin. Fixed price, live in 4 weeks, with Iris, your Salesforce admin, handed over at launch." />
-<meta property="og:title" content="Salesforce setup for small teams | Full Signal Advisory" />
-<meta property="og:description" content="Sales Cloud and Service Cloud starter builds for small teams with no Salesforce admin. Fixed price, live in 4 weeks, with Iris, your Salesforce admin, handed over at launch." />
+<title>Salesforce setup for small teams | Full Signal</title>
+<meta name="description" content="Sales Cloud and Service Cloud set up in four weeks at a fixed price, with an AI admin built from your own setup." />
+<meta property="og:title" content="Salesforce setup for small teams | Full Signal" />
+<meta property="og:description" content="Sales Cloud and Service Cloud set up in four weeks at a fixed price, with an AI admin built from your own setup." />
 <meta property="og:image" content="https://www.fullsignaladvisory.com/iris-og.jpg" />
 <meta property="og:site_name" content="Full Signal Advisory" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -55,7 +55,7 @@
       "@id": "https://www.fullsignaladvisory.com/salesforce#sales",
       "name": "Sales Cloud Starter",
       "serviceType": "Salesforce implementation",
-      "description": "Sales Cloud set up for a small team with no Salesforce admin: discovery, lead and opportunity setup, pipeline stages, a basic data import, core reports and dashboards. Fixed price, live in 4 weeks.",
+      "description": "Sales Cloud set up for a small team with no full-time Salesforce admin: discovery, lead and opportunity setup, pipeline stages, a basic data import, core reports and dashboards. Built ready for Agentforce. Fixed price, live in 4 weeks.",
       "url": "https://www.fullsignaladvisory.com/salesforce#sales",
       "provider": {
         "@id": "https://www.fullsignaladvisory.com/#organization"
@@ -71,7 +71,7 @@
       "@id": "https://www.fullsignaladvisory.com/salesforce#service",
       "name": "Service Cloud Starter",
       "serviceType": "Salesforce implementation",
-      "description": "Service Cloud set up for a small team with no Salesforce admin: discovery, case management, email-to-case, queues, a basic knowledge base and service dashboards. Fixed price, live in 4 weeks.",
+      "description": "Service Cloud set up for a small team with no full-time Salesforce admin: case management, email-to-case, queues, a basic knowledge base and service dashboards. Built ready for Agentforce. Fixed price, live in 4 weeks.",
       "url": "https://www.fullsignaladvisory.com/salesforce#service",
       "provider": {
         "@id": "https://www.fullsignaladvisory.com/#organization"
@@ -88,42 +88,34 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is included?",
+          "name": "Salesforce has its own setup agent now. Why would we need you?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sales Cloud Starter covers discovery, lead and opportunity setup, pipeline stages, a basic import of your contacts and deals, and core reports and dashboards. Service Cloud Starter covers discovery, case management, email-to-case, queues, a basic knowledge base and service dashboards. Both include 15 days of support after launch and Iris, your Salesforce admin."
+            "text": "It builds what you ask it for. Someone still has to know what to ask: which objects to use, what your edition allows, what the next phase will need. That is the work. And you leave with Iris, who knows your setup."
           }
         },
         {
           "@type": "Question",
-          "name": "How long does it take?",
+          "name": "What does the price leave out?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Four weeks from kickoff to live. If the delay is on our side, the work continues at no charge until you are live. The dates we need from you are written into the statement of work."
+            "text": "Integrations, Salesforce licenses and a Claude plan."
           }
         },
         {
           "@type": "Question",
-          "name": "Which Salesforce edition do I need?",
+          "name": "What if we are slow getting you data?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We check your edition before we scope anything, so the build only uses what your licenses include. If something you want needs a different edition, you hear that on the first call, not after the build starts."
+            "text": "The four weeks pause for delays on your side. Those are named in the agreement before we start."
           }
         },
         {
           "@type": "Question",
-          "name": "What comes after?",
+          "name": "Do we need Claude?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Your team runs the setup with Iris. When you want Agentforce to take on real work, such as replying to new leads or answering routine customer questions, that is a separate project, scoped and quoted after the starter."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need Claude?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Only to use Iris. She runs in Claude, so your team needs a Claude plan (Pro or Team). The Salesforce build itself does not need Claude. If your team is new to Claude, we can set that up as a short add-on."
+            "text": "Only to use Iris. She runs in Claude, so your team needs a Claude plan. The Salesforce setup itself does not need one."
           }
         }
       ]
@@ -185,90 +177,93 @@ p + p{margin-top:14px}
 .iris-name span.role{font-size:.9rem;color:var(--gray)}
 
 /* 1 hero */
-.hero{padding-block:32px 56px}
-@media(min-width:860px){.hero{padding-block:64px 88px}}
-.hero-grid{display:grid;gap:36px;align-items:center}
-@media(min-width:860px){.hero-grid{grid-template-columns:1.15fr .85fr;gap:56px}}
+.hero{padding-block:40px 56px}
+@media(min-width:860px){.hero{padding-block:72px 88px}}
 .hero .label{color:var(--s0)}
-.hero .sub{font-size:clamp(1.05rem,1rem + .3vw,1.2rem);max-width:54ch;margin:18px 0 28px}
-.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px}
-.iris-hero{max-width:340px;margin-inline:auto}
-@media(min-width:860px){.iris-hero{max-width:400px}}
+.hero h1{max-width:20ch}
+.hero .sub{font-size:clamp(1.05rem,1rem + .3vw,1.2rem);max-width:58ch;margin:18px 0 28px}
+.three{list-style:none;display:grid;gap:18px;margin-top:44px;padding-top:28px;border-top:1px solid var(--hair)}
+@media(min-width:760px){.three{grid-template-columns:repeat(3,1fr);gap:32px}}
+.three b{display:block;font-family:var(--display);font-weight:600;font-size:1.08rem;letter-spacing:-.01em;margin-bottom:4px}
+.source{margin-top:28px;font-size:.82rem;color:var(--gray);max-width:78ch}
+.source a{color:var(--gray)}
 
-/* 2 why */
-.why{background:var(--field)}
-.why .label{color:var(--s1)}
-.quote{margin-top:24px;background:var(--paper);border-radius:14px;padding:22px;max-width:680px}
-.quote q{font-family:var(--display);font-weight:600;font-size:clamp(1.15rem,1rem + .6vw,1.45rem);letter-spacing:-.02em;line-height:1.3;display:block;quotes:"\201C" "\201D"}
-.quote small{display:block;margin-top:10px;font-size:.82rem;color:var(--gray)}
-.quote small a{color:var(--gray)}
-
-/* 3, 4 packages */
-.pkg .wrap{display:grid;gap:28px}
-@media(min-width:860px){.pkg .wrap{grid-template-columns:1fr 1fr;gap:56px;align-items:start}}
-.pkg h2{margin-bottom:16px}
-.sales .label{color:var(--s2)}
-.service{padding-top:0}
-.service .label{color:var(--s3)}
-.incl{border:1px solid var(--hair);border-radius:14px;padding:22px}
-.incl h3{font-size:1rem;margin-bottom:12px}
-.incl ul{list-style:none;display:grid;gap:10px}
-.incl li{padding-left:22px;position:relative;line-height:1.5}
-.incl li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:2px;border-radius:2px;background:currentColor;opacity:.35}
-.sales .incl li::before{background:var(--s2);opacity:1}
-.service .incl li::before{background:var(--s3);opacity:1}
-.price{margin-top:20px;padding-top:18px;border-top:1px solid var(--hair)}
-.price b{font-family:var(--display);font-weight:700;font-size:2rem;letter-spacing:-.03em;line-height:1}
-.price span{display:block;margin-top:6px;font-size:.9rem;color:var(--gray)}
-.ready{padding-top:0}
-.ready p{max-width:64ch;font-size:1.02rem;border-left:3px solid var(--s3);padding-left:16px}
-
-/* 5 promise, tinted block */
-.promise{padding-top:0}
-.promise-box{background:rgba(174,31,123,.07);border-radius:18px;padding:24px}
-@media(min-width:860px){.promise-box{padding:44px}}
-.promise .label{color:var(--s4)}
-.terms{list-style:none;display:grid;gap:14px;margin-top:8px}
-@media(min-width:760px){.terms{grid-template-columns:repeat(3,1fr);gap:18px}}
-.terms li{background:var(--paper);border-radius:14px;padding:20px}
-.terms b{display:block;font-family:var(--display);font-weight:600;font-size:1.08rem;letter-spacing:-.01em;margin-bottom:6px}
-
-/* 6 iris */
-.iris .label{color:var(--s5)}
-.iris-grid{display:grid;gap:32px}
-@media(min-width:860px){.iris-grid{grid-template-columns:1fr 1fr;gap:56px;align-items:start}}
-.iris h3{margin:24px 0 10px;font-size:1.05rem}
-.iris ul{padding-left:1.1em;display:grid;gap:8px}
-.iris li::marker{color:var(--s5)}
-.chat{border:1px solid var(--hair);border-radius:18px;padding:18px;display:grid;gap:12px;background:var(--paper)}
+/* 2 iris */
+.iris{background:var(--field)}
+.iris .label{color:var(--s1)}
+.iris-top{display:grid;gap:28px;align-items:center}
+@media(min-width:860px){.iris-top{grid-template-columns:.8fr 1.2fr;gap:56px}}
+.iris-fig{max-width:300px;margin-inline:auto}
+@media(min-width:860px){.iris-fig{max-width:360px}}
+.iris h2 .ai-tag{vertical-align:middle;letter-spacing:.18em;margin-left:6px}
+.honest{margin-top:18px;border-left:3px solid var(--s1);padding-left:16px;max-width:62ch}
+.chat{margin-top:36px;max-width:680px;border:1px solid var(--hair);border-radius:18px;padding:18px;display:grid;gap:12px;background:var(--paper)}
 .chat-head{display:flex;align-items:center;gap:10px;padding-bottom:12px;border-bottom:1px solid var(--hair)}
 .chat-head img{width:40px;height:40px;border-radius:50%}
 .chat-head b{font-family:var(--display);font-weight:600;display:inline-flex;align-items:center;gap:8px}
+.chat-head .ex{margin-left:auto;font-family:var(--mono);font-size:.68rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--s1)}
 .msg{max-width:88%;padding:12px 14px;border-radius:14px;line-height:1.5;font-size:.95rem}
 .msg.you{justify-self:end;background:var(--ink);color:#fff;border-bottom-right-radius:4px}
 .msg.her{background:var(--field);border-bottom-left-radius:4px}
 .msg.her ol{padding-left:1.2em;margin-top:6px;display:grid;gap:4px}
 .chat-foot{font-size:.78rem;color:var(--gray)}
 
-/* 7 not included */
+/* 3 why */
+.why .label{color:var(--s2)}
+.quote{margin-top:24px;border:1px solid var(--hair);border-radius:14px;padding:22px;max-width:680px}
+.quote q{font-family:var(--display);font-weight:600;font-size:clamp(1.15rem,1rem + .6vw,1.45rem);letter-spacing:-.02em;line-height:1.3;display:block;quotes:"\201C" "\201D"}
+.quote small{display:block;margin-top:10px;font-size:.82rem;color:var(--gray)}
+.quote small a{color:var(--gray)}
+
+/* 4, 5 packages */
+.pkg{padding-top:0}
+.pkg .wrap{display:grid;gap:28px}
+@media(min-width:860px){.pkg .wrap{grid-template-columns:1fr 1fr;gap:56px;align-items:start}}
+.pkg h2{margin-bottom:0}
+.sales .label{color:var(--s3)}
+.service .label{color:var(--s4)}
+.incl{border:1px solid var(--hair);border-radius:14px;padding:22px}
+.incl h3{font-size:1.15rem;margin-bottom:14px}
+.incl ul{list-style:none;display:grid;gap:10px}
+.incl li{padding-left:22px;position:relative;line-height:1.5}
+.incl li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:2px;border-radius:2px}
+.sales .incl li::before{background:var(--s3)}
+.service .incl li::before{background:var(--s4)}
+.incl .ready{margin-top:14px;font-size:.95rem;color:var(--gray)}
+.price{margin-top:18px;padding-top:18px;border-top:1px solid var(--hair)}
+.price b{font-family:var(--display);font-weight:700;font-size:2rem;letter-spacing:-.03em;line-height:1}
+.price span{font-size:1rem;color:var(--gray);margin-left:6px}
+
+/* 6 not included */
 .not{padding-top:0}
-.not .label{color:var(--s6)}
-.not-box{border:1px solid var(--hair);border-radius:14px;padding:22px;max-width:760px;font-size:1.05rem}
+.not .label{color:var(--s5)}
+.not p:not(.label){max-width:64ch;font-size:1.05rem}
+
+/* 7 promise, tinted block */
+.promise{padding-top:0}
+.promise-box{background:rgba(157,31,145,.07);border-radius:18px;padding:24px}
+@media(min-width:860px){.promise-box{padding:44px}}
+.promise .label{color:var(--s6)}
+.terms{list-style:none;display:grid;gap:14px;margin-top:8px}
+@media(min-width:760px){.terms{grid-template-columns:repeat(3,1fr);gap:18px}}
+.terms li{background:var(--paper);border-radius:14px;padding:20px}
+.terms b{display:block;font-family:var(--display);font-weight:600;font-size:1.08rem;letter-spacing:-.01em;margin-bottom:6px}
+.fine{margin-top:18px;font-size:.85rem;color:var(--gray);max-width:70ch}
 
 /* 8 agentforce */
-.af{background:var(--field)}
+.af{padding-top:0}
 .af .label{color:var(--s7)}
 .af h3{margin:28px 0 14px}
 .outcomes{list-style:none;display:grid;gap:12px}
 @media(min-width:760px){.outcomes{grid-template-columns:repeat(3,1fr);gap:16px}}
-.outcomes li{background:var(--paper);border-radius:14px;padding:20px;line-height:1.5}
+.outcomes li{border:1px solid var(--hair);border-radius:14px;padding:20px;line-height:1.5}
 .outcomes .n{font-family:var(--mono);font-size:.8rem;font-weight:500;letter-spacing:.18em;color:var(--s7);display:block;margin-bottom:8px}
 
-/* 9 who builds it */
+/* 9 why rachael */
+.us{background:var(--field)}
 .us .label{color:var(--s8)}
 
 /* 10 for / not for */
-.who{padding-top:0}
 .who .label{color:var(--s9)}
 .who-grid{display:grid;gap:16px}
 @media(min-width:720px){.who-grid{grid-template-columns:1fr 1fr;gap:24px}}
@@ -292,7 +287,6 @@ p + p{margin-top:14px}
 .close{padding-top:0}
 .close-box{background:var(--grad);color:#fff;border-radius:18px;padding:28px 24px}
 @media(min-width:640px){.close-box{padding:48px}}
-.close-box .label{color:#fff}
 .close-box h2{margin-bottom:14px}
 .close-box p{font-size:1.08rem;max-width:58ch;margin-bottom:24px}
 
@@ -323,56 +317,86 @@ footer a{color:var(--gray)}
 
 <main>
   <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <p class="label">Salesforce for small teams</p>
-        <h1>You already have AI in your Salesforce. Let's make it work.</h1>
-        <p class="sub">For small teams with no Salesforce admin. We set up Sales Cloud or Service Cloud so leads get followed up and customer questions get answered, and the AI features already in your Salesforce have clean data to work from.</p>
-        <div class="cta-row">
-          <a class="btn btn-ink" data-book href="https://meetings-na2.hubspot.com/rwalrath/bring-your-questions?utm_source=site&amp;utm_medium=page&amp;utm_campaign=salesforce" target="_blank" rel="noopener">Book a 30-minute call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="text-link" href="#sales">See the two starter builds</a>
+    <div class="wrap">
+      <p class="label">Salesforce for small teams</p>
+      <h1>You already have AI in your Salesforce. Let's make it work.</h1>
+      <p class="sub">For small teams running Salesforce without a full-time admin. A working setup in four weeks, at a fixed price, with the know-how handed to your team.</p>
+      <a class="btn btn-ink" data-book href="https://meetings-na2.hubspot.com/rwalrath/bring-your-questions?utm_source=site&amp;utm_medium=page&amp;utm_campaign=salesforce" target="_blank" rel="noopener">Book a call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <ul class="three">
+        <li><b>Someone decides what gets built</b>A Solutions Architect works out what your team needs before anything is configured.</li>
+        <li><b>A live date</b>Four weeks from kickoff, written into the agreement.</li>
+        <li><b>The know-how stays with you</b>You leave with Iris, an AI admin built from your own setup.</li>
+      </ul>
+      <p class="source">Since March 2026, Salesforce's Free, Starter and Pro Suites include built-in Agentforce tools, such as record summaries and email drafts, and the Employee Agent on Starter and Pro. Source: Salesforce, <a href="https://www.salesforce.com/blog/small-business/agentforce-in-salesforce-suites/" target="_blank" rel="noopener">Agentforce is Now Built Into Salesforce Suites</a>, March 17, 2026.</p>
+    </div>
+  </section>
+
+  <section class="iris" id="iris">
+    <div class="wrap">
+      <div class="iris-top">
+        <figure class="iris-fig">
+          <picture>
+            <source srcset="/iris.webp" type="image/webp" />
+            <img src="/iris.jpg" width="720" height="720" alt="Iris, an AI avatar: an illustrated woman with a short crimson bob, wearing a crimson-to-violet jacket, inside a gradient ring." />
+          </picture>
+          <figcaption class="iris-name"><b>Iris <span class="ai-tag">AI</span></b><span class="role">Your Salesforce admin</span></figcaption>
+        </figure>
+        <div>
+          <p class="label">Handed over at launch</p>
+          <h2>Iris, your Salesforce admin. <span class="ai-tag">AI</span></h2>
+          <p class="lead">Iris is an AI admin built from your own setup. Ask her how your pipeline works, how to add a user, why a report looks wrong or what a flow does, and she walks you through it.</p>
+          <p class="honest">Iris explains your setup and guides you through small changes. She does not log in or make changes herself, and she holds no passwords. She runs in Claude, so your team needs a Claude plan.</p>
         </div>
       </div>
-      <figure class="iris-hero">
-        <picture>
-          <source srcset="/iris.webp" type="image/webp" />
-          <img src="/iris.jpg" width="720" height="720" alt="Iris, an AI avatar: an illustrated woman with a short crimson bob, wearing a crimson-to-violet jacket, inside a gradient ring." fetchpriority="high" />
-        </picture>
-        <figcaption class="iris-name"><b>Iris <span class="ai-tag">AI</span></b><span class="role">Your Salesforce admin</span></figcaption>
-      </figure>
+      <div class="chat" aria-label="Example conversation with Iris">
+        <div class="chat-head">
+          <img src="/iris.jpg" width="40" height="40" alt="" loading="lazy" />
+          <div><b>Iris <span class="ai-tag">AI</span></b><div style="font-size:.82rem;color:var(--gray)">Your Salesforce admin</div></div>
+          <span class="ex">Example</span>
+        </div>
+        <p class="msg you">We want a Negotiation stage between Proposal and Closed Won. How do I add it?</p>
+        <div class="msg her">Here is how to do it in your setup:
+          <ol>
+            <li>In Setup, open Object Manager, then Opportunity, then Fields &amp; Relationships, and click Stage.</li>
+            <li>Click New, name the stage Negotiation, and give it a probability between the ones on Proposal and Closed Won.</li>
+            <li>Open Sales Processes, edit your Standard Sales process, and move Negotiation into the selected values.</li>
+            <li>Back on the Stage field, click Reorder and place it after Proposal.</li>
+          </ol>
+          Your pipeline dashboard groups deals by stage, so Negotiation shows up there once a deal moves into it.</div>
+        <p class="chat-foot">Example conversation with mock data. Not a live system.</p>
+      </div>
     </div>
   </section>
 
   <section class="why">
     <div class="wrap">
-      <p class="label">Why the AI sits unused</p>
-      <h2>Salesforce switched the AI on in March. It needs a clean setup to be useful.</h2>
-      <p class="lead">Since 17 March 2026, Salesforce's Free, Starter and Pro Suites include AI features at no extra cost: record summaries, drafted emails, and on Starter and Pro, an employee agent. Those features read what is in your Salesforce. When leads still live in a spreadsheet, stages mean different things to different people, and customer emails never become cases, there is little for the AI to summarize or draft from.</p>
+      <p class="label">Why the AI is not doing much yet</p>
+      <h2>The AI in Salesforce works from what is in Salesforce</h2>
+      <p class="lead">If leads live in a spreadsheet, stages mean different things to different people and customer email sits in one person's inbox, it has nothing to work with. So the setup comes first.</p>
       <div class="quote">
-        <q>The more customer information you capture in one place, the more helpful AI becomes.</q>
-        <small>Salesforce, <a href="https://www.salesforce.com/blog/small-business/agentforce-in-salesforce-suites/" target="_blank" rel="noopener">Agentforce is now built into Salesforce Suites</a>, March 2026</small>
+        <q>The more customer information you capture in one place, the more helpful AI becomes</q>
+        <small>Salesforce, <a href="https://www.salesforce.com/blog/small-business/agentforce-in-salesforce-suites/" target="_blank" rel="noopener">Agentforce is Now Built Into Salesforce Suites</a>, March 17, 2026</small>
       </div>
-      <p class="lead" style="margin-top:24px">So the setup comes first. Each starter build below gets one side of your business into Salesforce properly, in four weeks.</p>
     </div>
   </section>
 
   <section class="pkg sales" id="sales">
     <div class="wrap">
       <div>
-        <p class="label">Sales Cloud Starter</p>
-        <h2>Every lead followed up, every deal where you can see it</h2>
-        <p class="lead">For teams whose leads arrive by email, phone and web form and get worked from memory. Every lead gets an owner and a next step, and the whole pipeline sits on one screen.</p>
+        <p class="label">Sales</p>
+        <h2>Every lead followed up, every deal where you can see it.</h2>
       </div>
       <div class="incl">
-        <h3>What is included</h3>
+        <h3>Sales Cloud Starter</h3>
         <ul>
-          <li>Discovery: how you sell today, written down before anything is built</li>
+          <li>Discovery</li>
           <li>Lead and opportunity setup</li>
-          <li>Pipeline stages that match how you sell</li>
-          <li>A basic import of your existing contacts and deals</li>
+          <li>Pipeline stages</li>
+          <li>A basic data import</li>
           <li>Core reports and dashboards</li>
         </ul>
-        <div class="price"><b>$7,500</b><span>Fixed price. Live in 4 weeks. Iris and 15 days of support included.</span></div>
+        <p class="ready">Built ready for Agentforce.</p>
+        <div class="price"><b>$7,500</b><span>fixed</span></div>
       </div>
     </div>
   </section>
@@ -380,28 +404,28 @@ footer a{color:var(--gray)}
   <section class="pkg service" id="service">
     <div class="wrap">
       <div>
-        <p class="label">Service Cloud Starter</p>
-        <h2>Every customer question answered, nothing lost in an inbox</h2>
-        <p class="lead">For teams answering customers from a shared inbox where nobody is sure who replied. Every customer email becomes a case with an owner, and you can see what is open and how long it has waited.</p>
+        <p class="label">Service</p>
+        <h2>Every customer question answered, nothing lost in an inbox.</h2>
       </div>
       <div class="incl">
-        <h3>What is included</h3>
+        <h3>Service Cloud Starter</h3>
         <ul>
-          <li>Discovery: how customers reach you today and who answers</li>
           <li>Case management</li>
-          <li>Email-to-case, so customer emails arrive as cases</li>
-          <li>Queues that send each case to the right person</li>
+          <li>Email-to-case</li>
+          <li>Queues</li>
           <li>A basic knowledge base</li>
           <li>Service dashboards</li>
         </ul>
-        <div class="price"><b>$7,500</b><span>Fixed price. Live in 4 weeks. Iris and 15 days of support included.</span></div>
+        <p class="ready">Built ready for Agentforce.</p>
+        <div class="price"><b>$7,500</b><span>fixed</span></div>
       </div>
     </div>
   </section>
 
-  <section class="ready">
+  <section class="not">
     <div class="wrap">
-      <p>Both builds are set up ready for Agentforce, so the AI features in your Salesforce have clean records to work from on the day you go live.</p>
+      <p class="label">What is not included</p>
+      <p>Integrations with other systems, Salesforce licenses, and a Claude plan. The scope of each starter is configuration and a few flows.</p>
     </div>
   </section>
 
@@ -409,57 +433,13 @@ footer a{color:var(--gray)}
     <div class="wrap">
       <div class="promise-box">
         <p class="label">The promise</p>
-        <h2>Live in 4 weeks, or I keep working at no charge until it is</h2>
+        <h2>Live in 4 weeks, or I keep working at no charge until it is.</h2>
         <ul class="terms">
-          <li><b>Live in 4 weeks</b>If the delay is on our side, the work continues at no charge until you are live. The dates we need from you, such as your data and your feedback, are written into the statement of work.</li>
-          <li><b>Fixed price</b>One price per build. No change orders inside the stated scope.</li>
-          <li><b>15 days of support</b>Fixes and questions for 15 days after launch, then Iris for everything after.</li>
+          <li><b>Live in 4 weeks</b>If it is not live by then, the work continues at no charge until it is.</li>
+          <li><b>Fixed price</b>No change orders inside the stated scope.</li>
+          <li><b>15 days of support</b>Fixes and questions for 15 days after launch.</li>
         </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="iris" id="iris">
-    <div class="wrap iris-grid">
-      <div>
-        <p class="label">Handed over at launch</p>
-        <h2>Meet Iris, your Salesforce admin</h2>
-        <p class="lead">Iris is a Claude skill built from your own Salesforce setup. She knows your objects, pipeline stages, queues, flows and reports, because she was written from them.</p>
-        <h3>What she does</h3>
-        <p>Ask her how something works or how to change it, and she walks your team through it step by step:</p>
-        <ul style="margin-top:10px">
-          <li>Add a new user</li>
-          <li>Change a pipeline stage</li>
-          <li>Fix a report that shows the wrong numbers</li>
-          <li>Explain what a flow does and when it runs</li>
-        </ul>
-        <h3>What she does not do</h3>
-        <p>She does not log in to Salesforce or make changes herself. Your team makes each change, with Iris explaining the steps. She holds no passwords or login details.</p>
-        <p>Iris is AI. Using her needs a Claude plan (Pro or Team). If your team is new to Claude, we can set that up as a short add-on.</p>
-      </div>
-      <div class="chat" aria-label="Example conversation with Iris">
-        <div class="chat-head">
-          <img src="/iris.jpg" width="40" height="40" alt="" loading="lazy" />
-          <div><b>Iris <span class="ai-tag">AI</span></b><div style="font-size:.82rem;color:var(--gray)">Your Salesforce admin</div></div>
-        </div>
-        <p class="msg you">Dana starts Monday on the sales team. How do I add her?</p>
-        <div class="msg her">Here is how it works in your setup:
-          <ol>
-            <li>In Setup, open Users and click New User.</li>
-            <li>Give her the same profile and role as the rest of the sales team.</li>
-            <li>Tick "Generate new password and notify user" so she gets her login email.</li>
-          </ol>
-          Want me to walk you through adding her to the Sales Pipeline dashboard next?</div>
-        <p class="chat-foot">Example conversation. Mock setup, not a live system.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="not">
-    <div class="wrap">
-      <p class="label">Not included</p>
-      <div class="not-box">
-        <p>Integrations with other systems. Salesforce licenses. A Claude plan, which you need to use Iris. Each starter build is configuration and a few flows.</p>
+        <p class="fine">Delays on your side, such as data and feedback, are named in the agreement and do not count against the four weeks.</p>
       </div>
     </div>
   </section>
@@ -468,41 +448,40 @@ footer a{color:var(--gray)}
     <div class="wrap">
       <p class="label">After the starter</p>
       <h2>Agentforce projects</h2>
-      <p class="lead">Once the setup is clean, Agentforce can take on work your team does by hand today. Each project is scoped and quoted after your starter build, around one outcome.</p>
+      <p class="lead">Once the setup is in place, Agentforce can take on work your team does by hand today. Each project is scoped after a starter.</p>
       <h3>Outcomes we design for</h3>
       <ul class="outcomes">
-        <li><span class="n">01</span>New leads get a first reply within minutes, drafted from what is already in Salesforce and checked by a person.</li>
-        <li><span class="n">02</span>Routine customer questions get answered from your knowledge base, and the rest go to the right person with the history attached.</li>
-        <li><span class="n">03</span>Your team starts each call with a summary of the account instead of clicking through tabs.</li>
+        <li><span class="n">01</span>Hours back each week, because the routine updates and summaries no longer fall to a person.</li>
+        <li><span class="n">02</span>Customer questions answered without a person, from your own knowledge base.</li>
+        <li><span class="n">03</span>Follow-ups that go out the same day a lead comes in.</li>
       </ul>
     </div>
   </section>
 
   <section class="us">
     <div class="wrap">
-      <p class="label">Who builds it</p>
-      <h2>Architect-led, from the first conversation</h2>
-      <p class="lead">Rachael Walrath is a Solutions Architect with fifteen-plus years mapping how companies run, and six Salesforce certifications, including Data Architect and AI Associate. She runs the discovery herself, builds the setup around how your team works, and hands it over with Iris so it does not depend on her.</p>
+      <p class="label">Why Rachael</p>
+      <h2>The person who scopes the work is the person who builds it.</h2>
+      <p class="lead">Rachael Walrath is a Solutions Architect, with fifteen-plus years as a systems architect and six Salesforce certifications, including Data Architect and AI Associate.</p>
     </div>
   </section>
 
   <section class="who">
     <div class="wrap">
-      <p class="label">Who this is for</p>
+      <p class="label">For and not for</p>
       <div class="who-grid">
         <div class="who-col">
           <h3>For</h3>
           <ul>
-            <li>Teams of about 10 to 200 people, with 5 to 50 Salesforce users and no full-time admin.</li>
-            <li>Teams already on Salesforce with a setup nobody trusts, or with the AI features switched on and unused.</li>
-            <li>Teams moving their sales or service off spreadsheets and shared inboxes.</li>
+            <li>Teams of roughly 10 to 200 already on Salesforce, with no full-time admin and a setup nobody fully trusts.</li>
           </ul>
         </div>
         <div class="who-col">
           <h3>Not for</h3>
           <ul>
-            <li>Companies not on Salesforce and not planning to be.</li>
-            <li>Projects that start with connecting Salesforce to other systems.</li>
+            <li>Companies that have not chosen Salesforce yet.</li>
+            <li>Teams whose first need is an integration or custom code.</li>
+            <li>Companies with their own admin team.</li>
           </ul>
         </div>
       </div>
@@ -511,22 +490,20 @@ footer a{color:var(--gray)}
 
   <section class="faq">
     <div class="wrap">
-      <p class="label">Questions people ask</p>
-      <details><summary>What is included?</summary><p>Sales Cloud Starter covers discovery, lead and opportunity setup, pipeline stages, a basic import of your contacts and deals, and core reports and dashboards. Service Cloud Starter covers discovery, case management, email-to-case, queues, a basic knowledge base and service dashboards. Both include 15 days of support after launch and Iris, your Salesforce admin.</p></details>
-      <details><summary>How long does it take?</summary><p>Four weeks from kickoff to live. If the delay is on our side, the work continues at no charge until you are live. The dates we need from you are written into the statement of work.</p></details>
-      <details><summary>Which Salesforce edition do I need?</summary><p>We check your edition before we scope anything, so the build only uses what your licenses include. If something you want needs a different edition, you hear that on the first call, not after the build starts.</p></details>
-      <details><summary>What comes after?</summary><p>Your team runs the setup with Iris. When you want Agentforce to take on real work, such as replying to new leads or answering routine customer questions, that is a separate project, scoped and quoted after the starter.</p></details>
-      <details><summary>Do I need Claude?</summary><p>Only to use Iris. She runs in Claude, so your team needs a Claude plan (Pro or Team). The Salesforce build itself does not need Claude. If your team is new to Claude, we can set that up as a short add-on.</p></details>
+      <p class="label">Questions</p>
+      <details><summary>Salesforce has its own setup agent now. Why would we need you?</summary><p>It builds what you ask it for. Someone still has to know what to ask: which objects to use, what your edition allows, what the next phase will need. That is the work. And you leave with Iris, who knows your setup.</p></details>
+      <details><summary>What does the price leave out?</summary><p>Integrations, Salesforce licenses and a Claude plan.</p></details>
+      <details><summary>What if we are slow getting you data?</summary><p>The four weeks pause for delays on your side. Those are named in the agreement before we start.</p></details>
+      <details><summary>Do we need Claude?</summary><p>Only to use Iris. She runs in Claude, so your team needs a Claude plan. The Salesforce setup itself does not need one.</p></details>
     </div>
   </section>
 
   <section class="close">
     <div class="wrap">
       <div class="close-box">
-        <p class="label">Sales Cloud Starter or Service Cloud Starter · $7,500 each</p>
-        <h2>Bring your Salesforce to a 30-minute call</h2>
-        <p>Tell us what your team uses Salesforce for today and where it falls short. We will tell you which starter fits, what it would cover, and whether now is the time to do it.</p>
-        <a class="btn btn-white" data-book href="https://meetings-na2.hubspot.com/rwalrath/bring-your-questions?utm_source=site&amp;utm_medium=page&amp;utm_campaign=salesforce" target="_blank" rel="noopener">Book a 30-minute call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <h2>Tell me what your Salesforce is not doing for you.</h2>
+        <p>On the call you will hear which starter fits and what it would cover.</p>
+        <a class="btn btn-white" data-book href="https://meetings-na2.hubspot.com/rwalrath/bring-your-questions?utm_source=site&amp;utm_medium=page&amp;utm_campaign=salesforce" target="_blank" rel="noopener">Book a call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
   </section>
@@ -535,7 +512,7 @@ footer a{color:var(--gray)}
 <footer>
   <div class="wrap">
     <span>Full Signal Advisory · <a href="/">fullsignaladvisory.com</a> · <a href="mailto:rachael.walrath@fullsignaladvisory.com">rachael.walrath@fullsignaladvisory.com</a></span>
-    <span>Salesforce and Agentforce are trademarks of Salesforce, Inc. Claude is a trademark of Anthropic. Full Signal is not affiliated with either.</span>
+    <span>Salesforce, Sales Cloud, Service Cloud and Agentforce are trademarks of Salesforce, Inc. Full Signal Advisory is an independent firm. Claude is a trademark of Anthropic.</span>
   </div>
 </footer>
 

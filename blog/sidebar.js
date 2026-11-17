@@ -3,6 +3,7 @@
 // Events disappear automatically the day after `ends`.
 (function(){
   const POSTS = [
+    { slug: 'what-slips-when-youre-the-only-system', title: 'What Slips When You\'re the Only System', cat: 'Workflows', date: '2026-11-17', tags: ['workflows','operations','it-msp'] },
     { slug: 'how-to-measure-if-ai-saves-time', title: 'How Do You Know If AI Actually Saved You Any Time?', cat: 'Workflows', date: '2026-10-19', tags: ['workflows','measurement','tools'] },
     { slug: 'claude-skills-for-small-business', title: '6 Claude Skills Small Businesses Should Turn On (Then Make Their Own)', cat: 'Claude training', date: '2026-10-14', tags: ['claude','setup','workflows','skills'] },
     { slug: 'prompting-is-only-half-the-story', title: 'Prompting Is Only Half the Story: Why Claude Skills Beat Better Prompts', cat: 'Claude training', date: '2026-10-14', tags: ['claude','setup','workflows','skills','prompts'] },

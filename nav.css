@@ -1,0 +1,65 @@
+/* Site navigation component (CCB-14).
+   One expandable menu used on every page: desktop dropdowns, mobile accordions, footer columns.
+   The markup is written into each page by scripts/build-nav.mjs; behaviour lives in /nav.js.
+   Colours read the page's own tokens where they exist (styles.css pages, light and dark),
+   and fall back to fs-brand ink, paper and hairline on pages that do not load styles.css. */
+
+/* desktop */
+.fsn-list{display:flex;align-items:center;gap:22px;list-style:none;margin:0;padding:0}
+.fsn-list>li{position:relative}
+.fsn-list>li>a,.fsn-parent{font:inherit;font-size:var(--text-sm,.95rem);line-height:1.4;color:var(--muted,#14141A);text-decoration:none;background:none;border:0;padding:6px 0;cursor:pointer;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.fsn-list>li>a:hover,.fsn-parent:hover,.fsn-parent[aria-expanded="true"]{color:var(--text,#14141A)}
+.fsn-parent svg{width:12px;height:12px;flex-shrink:0;transition:transform .2s}
+.fsn-parent[aria-expanded="true"] svg{transform:rotate(180deg)}
+.fsn-list>li>a[aria-current="page"],.fsn-list>li.is-current>.fsn-parent{color:var(--text,#14141A);font-weight:600}
+.fsn-sub{position:absolute;top:calc(100% + 10px);left:-14px;min-width:250px;max-width:340px;list-style:none;margin:0;padding:8px;background:var(--bg,#FFFFFF);border:1px solid var(--border,#E7E7ED);border-radius:12px;z-index:60}
+.fsn-sub[hidden]{display:none}
+.fsn-sub a{display:block;padding:9px 10px;border-radius:8px;font-size:var(--text-sm,.95rem);line-height:1.35;color:var(--text,#14141A);text-decoration:none}
+.fsn-sub a:hover{background:var(--surface,#F2F2F5)}
+.fsn-sub a:focus-visible{outline:2px solid var(--text,#14141A);outline-offset:-2px}
+.fsn-sub a[aria-current="page"]{font-weight:600;background:var(--surface,#F2F2F5)}
+@media(prefers-reduced-motion:reduce){.fsn-parent svg{transition:none}}
+
+/* the header switches to the menu button below this width (six items plus the button need the room) */
+@media(max-width:1080px){
+  .fsn{display:none}
+  .nav .menu-btn{display:grid}
+}
+
+/* mobile accordion, inside the existing mobile menu */
+.fsn-m{list-style:none;margin:0}
+.fsn-m-parent{width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:var(--space-4,14px) 0;font:inherit;font-weight:600;font-size:var(--text-lg,1.1rem);color:var(--text,#14141A);background:none;border:0;border-bottom:1px solid var(--border,#E7E7ED);cursor:pointer;text-align:left}
+.fsn-m-parent svg{width:16px;height:16px;flex-shrink:0;transition:transform .2s}
+.fsn-m-parent[aria-expanded="true"] svg{transform:rotate(180deg)}
+.mobile-nav .fsn-m-sub,.fsn-m-sub{list-style:none;padding:0 0 0 18px;margin:0}
+.fsn-m-sub[hidden]{display:none}
+.mobile-nav .fsn-m-sub a,.fsn-m-sub a{font-size:var(--text-base,1rem);font-weight:500}
+
+/* standalone header, for pages that do not load styles.css */
+.fsn-top{border-bottom:1px solid var(--hair,#E7E7ED);background:var(--paper,#FFFFFF);position:relative;z-index:50}
+.fsn-bar{max-width:1080px;margin-inline:auto;padding-inline:16px;height:56px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+@media(min-width:640px){.fsn-bar{padding-inline:32px}}
+.fsn-menu-btn{display:none;width:42px;height:42px;border-radius:50%;border:1px solid var(--hair,#E7E7ED);background:transparent;color:var(--ink,#14141A);place-items:center;cursor:pointer}
+.fsn-menu-btn svg{width:20px;height:20px}
+@media(max-width:1080px){.fsn-menu-btn{display:grid}}
+.fsn-mobile{border-top:1px solid var(--hair,#E7E7ED);background:var(--paper,#FFFFFF)}
+.fsn-mobile[hidden]{display:none}
+.fsn-mobile .fsn-m{max-width:1080px;margin-inline:auto;padding:8px 16px 20px}
+@media(min-width:640px){.fsn-mobile .fsn-m{padding-inline:32px}}
+.fsn-mobile .fsn-m a{display:block;padding:14px 0;text-decoration:none;font-weight:600;font-size:1.05rem;color:var(--ink,#14141A);border-bottom:1px solid var(--hair,#E7E7ED)}
+.fsn-mobile .fsn-m a[aria-current="page"]{text-decoration:underline;text-underline-offset:4px}
+.fsn-mobile .fsn-m-parent{font-size:1.05rem;padding:14px 0}
+.fsn-mobile .fsn-m-sub a{font-weight:500;font-size:1rem}
+
+/* footer columns on styles.css pages: one column per header group */
+.f-grid{grid-template-columns:1.3fr repeat(5,minmax(0,1fr))}
+@media(max-width:1100px){.f-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.f-grid>div:first-child{grid-column:1/-1}}
+@media(max-width:560px){.f-grid{grid-template-columns:1fr 1fr}}
+
+/* footer columns on standalone pages */
+.fsn-footnav{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:24px;padding-bottom:24px;margin-bottom:20px;border-bottom:1px solid var(--hair,#E7E7ED)}
+.fsn-footnav h2{font-family:var(--mono,ui-monospace,monospace);font-size:.72rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--gray,#84848F);margin:0 0 10px;line-height:1.4}
+.fsn-footnav ul{list-style:none;margin:0;padding:0}
+.fsn-footnav li{padding-block:3px;line-height:1.4}
+.fsn-footnav a{text-decoration:none;color:var(--ink,#14141A)}
+.fsn-footnav a:hover{text-decoration:underline;text-underline-offset:3px}

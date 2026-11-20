@@ -41,7 +41,7 @@
       "@type": "Person",
       "@id": "https://www.fullsignaladvisory.com/#rachael-walrath",
       "name": "Rachael Walrath",
-      "jobTitle": "Founder & Principal Consultant",
+      "jobTitle": "Founder & Principal Advisor",
       "url": "https://www.fullsignaladvisory.com/about",
       "worksFor": {
         "@id": "https://www.fullsignaladvisory.com/#organization"
@@ -106,7 +106,7 @@ h3{font-size:1.2rem;letter-spacing:-.02em;line-height:1.25}
 /* header */
 .top{border-bottom:1px solid var(--hair)}
 .top .wrap{height:56px;display:flex;align-items:center}
-.lockup{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:700;font-size:1.05rem;letter-spacing:-.02em}
+.lockup{flex-shrink:0;display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:700;font-size:1.05rem;letter-spacing:-.02em}
 .lockup svg{width:30px;height:21px;flex-shrink:0}
 
 /* 1 hero */
@@ -192,14 +192,15 @@ h3{font-size:1.2rem;letter-spacing:-.02em;line-height:1.25}
 .close-box p{font-size:1.08rem;max-width:56ch;margin-bottom:24px}
 
 footer{border-top:1px solid var(--hair);padding-block:28px;font-size:.85rem;color:var(--gray)}
-footer .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+footer .foot-base{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
 footer a{color:var(--gray)}
 </style>
+<link rel="stylesheet" href="/nav.css" />
 </head>
 <body>
 <script src="/webinar-banner.js"></script>
-<header class="top">
-  <div class="wrap">
+<header class="fsn-top">
+  <div class="fsn-bar">
     <a class="lockup" href="/" aria-label="Full Signal Advisory home">
       <svg viewBox="0 0 34 24" aria-hidden="true">
         <defs><linearGradient id="fsm" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="34" y2="0"><stop offset="0" stop-color="#D01F4E"/><stop offset=".52" stop-color="#A01F8E"/><stop offset="1" stop-color="#5F22C0"/></linearGradient></defs>
@@ -213,7 +214,10 @@ footer a{color:var(--gray)}
       </svg>
       Full Signal
     </a>
+    <!--fsn:nav--><nav class="fsn" aria-label="Primary"><ul class="fsn-list"><li class="fsn-group is-current"><button type="button" class="fsn-parent" aria-expanded="false" aria-controls="fsn-g-advisory">Advisory<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><ul class="fsn-sub" id="fsn-g-advisory" hidden><li><a href="/advisory">Advisory packages</a></li><li><a href="/ai-rollout" aria-current="page">Team Claude Rollout</a></li></ul></li><li class="fsn-group"><button type="button" class="fsn-parent" aria-expanded="false" aria-controls="fsn-g-training">Training<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><ul class="fsn-sub" id="fsn-g-training" hidden><li><a href="/training">Claude training</a></li><li><a href="/lab">AI Workshop for Small and Medium Businesses</a></li><li><a href="/webinar">Free webinar</a></li><li><a href="/starter-kit">AI Employee Starter Kit</a></li><li><a href="/events">Events</a></li></ul></li><li class="fsn-group"><button type="button" class="fsn-parent" aria-expanded="false" aria-controls="fsn-g-crm">CRM<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><ul class="fsn-sub" id="fsn-g-crm" hidden><li><a href="/crm-scalability-assessment">HubSpot or Salesforce?</a></li><li><a href="/salesforce">Salesforce for Small and Medium Businesses</a></li><li><a href="/iris">Iris</a></li></ul></li><li class="fsn-group"><button type="button" class="fsn-parent" aria-expanded="false" aria-controls="fsn-g-blog">Blog<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><ul class="fsn-sub" id="fsn-g-blog" hidden><li><a href="/blog">All posts</a></li><li><a href="/blog/how-to-measure-if-ai-saves-time">How Do You Know If AI Actually Saved You Any Time?</a></li><li><a href="/blog/claude-prompts-small-business-marketing">6 Claude Prompts for Small Business Marketing</a></li><li><a href="/blog/claude-skills-for-small-business">6 Claude Skills Small Businesses Should Use</a></li><li><a href="/blog/prompting-is-only-half-the-story">Why Claude Skills Beat Better Prompts</a></li><li><a href="/blog/ai-consulting-for-small-agencies">AI Consulting for Small Agencies: How to Choose</a></li><li><a href="/blog/best-ai-workflow-consulting-services-for-firms">Best AI Workflow Consulting Services for Firms</a></li><li><a href="/blog/the-hidden-cost-of-choosing-ai-tools-yourself">Why Choosing AI Tools Yourself Costs More Than You Think</a></li><li><a href="/blog/why-claude-gives-generic-answers">Why Claude Gives You Generic Answers, and the Setup That Fixes It</a></li></ul></li><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li></ul></nav><!--/fsn:nav-->
+    <button type="button" class="fsn-menu-btn" aria-expanded="false" aria-controls="fsn-mobile" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
+  <div class="fsn-mobile" id="fsn-mobile" hidden><!--fsn:mnav--><ul class="fsn-m"><li><a href="/">Home</a></li><li><button type="button" class="fsn-m-parent" aria-expanded="false" aria-controls="fsn-m-advisory">Advisory<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><ul class="fsn-m-sub" id="fsn-m-advisory" hidden><li><a href="/advisory">Advisory packages</a></li><li><a href="/ai-rollout" aria-current="page">Team Claude Rollout</a></li></ul></li><li><button type="button" class="fsn-m-parent" aria-expanded="false" aria-controls="fsn-m-training">Training<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><ul class="fsn-m-sub" id="fsn-m-training" hidden><li><a href="/training">Claude training</a></li><li><a href="/lab">AI Workshop for Small and Medium Businesses</a></li><li><a href="/webinar">Free webinar</a></li><li><a href="/starter-kit">AI Employee Starter Kit</a></li><li><a href="/events">Events</a></li></ul></li><li><button type="button" class="fsn-m-parent" aria-expanded="false" aria-controls="fsn-m-crm">CRM<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><ul class="fsn-m-sub" id="fsn-m-crm" hidden><li><a href="/crm-scalability-assessment">HubSpot or Salesforce?</a></li><li><a href="/salesforce">Salesforce for Small and Medium Businesses</a></li><li><a href="/iris">Iris</a></li></ul></li><li><button type="button" class="fsn-m-parent" aria-expanded="false" aria-controls="fsn-m-blog">Blog<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><ul class="fsn-m-sub" id="fsn-m-blog" hidden><li><a href="/blog">All posts</a></li><li><a href="/blog/how-to-measure-if-ai-saves-time">How Do You Know If AI Actually Saved You Any Time?</a></li><li><a href="/blog/claude-prompts-small-business-marketing">6 Claude Prompts for Small Business Marketing</a></li><li><a href="/blog/claude-skills-for-small-business">6 Claude Skills Small Businesses Should Use</a></li><li><a href="/blog/prompting-is-only-half-the-story">Why Claude Skills Beat Better Prompts</a></li><li><a href="/blog/ai-consulting-for-small-agencies">AI Consulting for Small Agencies: How to Choose</a></li><li><a href="/blog/best-ai-workflow-consulting-services-for-firms">Best AI Workflow Consulting Services for Firms</a></li><li><a href="/blog/the-hidden-cost-of-choosing-ai-tools-yourself">Why Choosing AI Tools Yourself Costs More Than You Think</a></li><li><a href="/blog/why-claude-gives-generic-answers">Why Claude Gives You Generic Answers, and the Setup That Fixes It</a></li></ul></li><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li></ul><!--/fsn:mnav--></div>
 </header>
 
 <main>
@@ -345,8 +349,15 @@ footer a{color:var(--gray)}
 
 <footer>
   <div class="wrap">
+    <div class="fsn-footnav"><!--fsn:foot--><div><h2>Advisory</h2><ul><li><a href="/advisory#check">AI Assessment</a></li><li><a href="/advisory#audit">Signal Audit</a></li><li><a href="/advisory#sprint">Signal Sprint</a></li><li><a href="/advisory#brain">Signal Brain</a></li><li><a href="/advisory">Advisory packages</a></li><li><a href="/ai-rollout" aria-current="page">Team Claude Rollout</a></li></ul></div>
+      <div><h2>Training</h2><ul><li><a href="/training">Claude training</a></li><li><a href="/lab">AI Workshop for Small and Medium Businesses</a></li><li><a href="/webinar">Free webinar</a></li><li><a href="/starter-kit">AI Employee Starter Kit</a></li><li><a href="/events">Events</a></li></ul></div>
+      <div><h2>CRM</h2><ul><li><a href="/crm-scalability-assessment">HubSpot or Salesforce?</a></li><li><a href="/salesforce">Salesforce for Small and Medium Businesses</a></li><li><a href="/iris">Iris</a></li></ul></div>
+      <div><h2>Blog</h2><ul><li><a href="/blog">All posts</a></li><li><a href="/blog/how-to-measure-if-ai-saves-time">How Do You Know If AI Actually Saved You Any Time?</a></li><li><a href="/blog/claude-prompts-small-business-marketing">6 Claude Prompts for Small Business Marketing</a></li><li><a href="/blog/claude-skills-for-small-business">6 Claude Skills Small Businesses Should Use</a></li><li><a href="/blog/prompting-is-only-half-the-story">Why Claude Skills Beat Better Prompts</a></li><li><a href="/blog/ai-consulting-for-small-agencies">AI Consulting for Small Agencies: How to Choose</a></li><li><a href="/blog/best-ai-workflow-consulting-services-for-firms">Best AI Workflow Consulting Services for Firms</a></li><li><a href="/blog/the-hidden-cost-of-choosing-ai-tools-yourself">Why Choosing AI Tools Yourself Costs More Than You Think</a></li><li><a href="/blog/why-claude-gives-generic-answers">Why Claude Gives You Generic Answers, and the Setup That Fixes It</a></li></ul></div>
+      <div><h2>Company</h2><ul><li><a href="/">Home</a></li><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li><li><a href="https://meetings-na2.hubspot.com/rwalrath/bring-your-questions" target="_blank" rel="noopener">Free Q&amp;A call</a></li></ul></div><!--/fsn:foot--></div>
+    <div class="foot-base">
     <span>Full Signal Advisory · <a href="/">fullsignaladvisory.com</a> · <a href="mailto:rachael.walrath@fullsignaladvisory.com">rachael.walrath@fullsignaladvisory.com</a></span>
     <span>Claude is a trademark of Anthropic. Full Signal is not affiliated with Anthropic.</span>
+    </div>
   </div>
 </footer>
 
@@ -380,5 +391,6 @@ var HS_FORM_ID='62935e02-79c4-4b4d-9c48-6e65fa8e6622';
 })();
 </script>
 <script defer src="/_vercel/insights/script.js"></script>
+<script src="/nav.js" defer></script>
 </body>
 </html>

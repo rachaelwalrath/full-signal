@@ -15,12 +15,14 @@ Fixed-scope engagements, done for you. Most firms should start with the $999 AI 
 - [Retainer](https://www.fullsignaladvisory.com/advisory#path): Optional, monthly. New workflows, knowledge refreshes, and a quarterly AI review.
 - [Team Claude Rollout](https://www.fullsignaladvisory.com/ai-rollout): $7.5K–$25K, 4–8 weeks, priced by team size. For firms of 10–150 people adopting Claude Team or Enterprise.
 
-## Salesforce setup
+## Salesforce for Small and Medium Businesses
 
-For small teams already on Salesforce with no full-time admin. Fixed price, live in 4 weeks, with 15 days of support and Iris, your Salesforce admin (a Claude skill built from the client's own setup), handed over at launch. Not included: integrations with other systems, Salesforce licenses, a Claude plan.
+Salesforce implementation for small businesses setting up Salesforce for the first time: teams that have just bought it, or are moving onto it from spreadsheets or a basic CRM, and have no admin. Fixed price, live in 4 weeks, with 15 days of support after launch. Not included: integrations with other systems, Salesforce licenses. Not for an existing Salesforce setup that needs cleanup or rework; that work is scoped after a look at the setup.
 
-- [Sales Cloud Starter](https://www.fullsignaladvisory.com/salesforce#sales): $7,500. Discovery, lead and opportunity setup, pipeline stages, a basic data import, core reports and dashboards.
-- [Service Cloud Starter](https://www.fullsignaladvisory.com/salesforce#service): $7,500. Discovery, case management, email-to-case, queues, a basic knowledge base, service dashboards.
+- [Sales Cloud Starter](https://www.fullsignaladvisory.com/salesforce#sales): $7,500 fixed. Discovery, lead and opportunity setup, pipeline stages, a basic data import, core reports and dashboards. Built ready for Agentforce.
+- [Service Cloud Starter](https://www.fullsignaladvisory.com/salesforce#service): $7,500 fixed. Case management, email-to-case, queues, a basic knowledge base, service dashboards. Built ready for Agentforce.
+- [CRM Scalability Assessment](https://www.fullsignaladvisory.com/salesforce#crm-assessment): $799. HubSpot or Salesforce? For companies on HubSpot weighing a move. A 45-minute meeting, then a fair written evaluation within 48 hours of staying against moving, the fixes worth making in HubSpot and their cost, and the right Salesforce license if they move. The answer may be to stay. Credited toward the build on either path.
+- [Iris, your Salesforce admin](https://www.fullsignaladvisory.com/salesforce#iris): an AI admin, a separate monthly subscription, not part of a starter package. Still being designed. Contact us; no published price.
 - [Agentforce projects](https://www.fullsignaladvisory.com/salesforce): scoped and quoted after a starter build.
 
 ## About

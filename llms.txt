@@ -2,7 +2,7 @@
 
 > AI advisory for professionals who sell their knowledge.
 
-Full Signal Advisory helps consultants, advisors, agencies, and expert teams turn what they know into AI workflows that win clients, save time, and keep critical knowledge from walking out the door. Full Signal builds it for you. Founded by Rachael Walrath, Founder & Principal Consultant.
+Full Signal Advisory helps consultants, advisors, agencies, and expert teams turn what they know into AI workflows that win clients, save time, and keep critical knowledge from walking out the door. Full Signal builds it for you. Founded by Rachael Walrath, Founder & Principal Advisor.
 
 ## Advisory
 
@@ -15,17 +15,20 @@ Fixed-scope engagements, done for you. Most firms should start with the $999 AI 
 - [Retainer](https://www.fullsignaladvisory.com/advisory#path): Optional, monthly. New workflows, knowledge refreshes, and a quarterly AI review.
 - [Team Claude Rollout](https://www.fullsignaladvisory.com/ai-rollout): $7.5K–$25K, 4–8 weeks, priced by team size. For firms of 10–150 people adopting Claude Team or Enterprise.
 
-## Salesforce setup
+## CRM
 
-For small teams already on Salesforce with no full-time admin. Fixed price, live in 4 weeks, with 15 days of support and Iris, your Salesforce admin (a Claude skill built from the client's own setup), handed over at launch. Not included: integrations with other systems, Salesforce licenses, a Claude plan.
+Three pages, one for each step: decide (HubSpot or Salesforce), build (the Salesforce starters), keep it running (Iris).
 
-- [Sales Cloud Starter](https://www.fullsignaladvisory.com/salesforce#sales): $7,500. Discovery, lead and opportunity setup, pipeline stages, a basic data import, core reports and dashboards.
-- [Service Cloud Starter](https://www.fullsignaladvisory.com/salesforce#service): $7,500. Discovery, case management, email-to-case, queues, a basic knowledge base, service dashboards.
-- [Agentforce projects](https://www.fullsignaladvisory.com/salesforce): scoped and quoted after a starter build.
+- [CRM Scalability Assessment](https://www.fullsignaladvisory.com/crm-scalability-assessment): $799. HubSpot or Salesforce? For companies running HubSpot that are weighing Salesforce. A 45-minute meeting, then a written evaluation within 48 hours: the case for staying on HubSpot and the case for moving, the fixes worth making in HubSpot and what they would cost, and the Salesforce license that fits if they move. The answer may be to stay. No login to the client's HubSpot is needed. Book first, pay after the session. The $799 is credited toward the work on either path. HubSpot only.
+- [Salesforce for Small and Medium Businesses](https://www.fullsignaladvisory.com/salesforce): Salesforce implementation for companies setting up Salesforce for the first time, with no admin. Fixed price, live in 4 weeks or the work continues at no charge, with 15 days of support after launch. Not included: integrations with other systems, Salesforce licenses. Not for an existing Salesforce setup that needs cleanup or rework; that work is scoped after a look at the setup.
+  - [Sales Cloud Starter](https://www.fullsignaladvisory.com/salesforce#sales): $7,500 fixed. Discovery, lead and opportunity setup, pipeline stages, a basic data import, core reports and dashboards. Built ready for Agentforce.
+  - [Service Cloud Starter](https://www.fullsignaladvisory.com/salesforce#service): $7,500 fixed. Case management, email-to-case, queues, a basic knowledge base, service dashboards. Built ready for Agentforce.
+  - Agentforce projects: scoped and quoted after a starter build.
+- [Iris, your Salesforce admin](https://www.fullsignaladvisory.com/iris): an AI admin being designed to run on a client's own Salesforce, as a monthly subscription separate from the starter packages. Not yet available; register interest through Contact us. No published price.
 
 ## About
 
-- [About Rachael Walrath](https://www.fullsignaladvisory.com/about): Founder & Principal Consultant. Fifteen-plus years as a systems architect, with six Salesforce certifications including Data Architect and AI Associate.
+- [About Rachael Walrath](https://www.fullsignaladvisory.com/about): Founder & Principal Advisor. Fifteen-plus years as a systems architect, with six Salesforce certifications including Data Architect and AI Associate.
 - [Blog](https://www.fullsignaladvisory.com/blog)
 
 ## Contact
